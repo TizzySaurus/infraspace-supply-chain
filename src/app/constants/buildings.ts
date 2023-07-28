@@ -11,13 +11,15 @@ const hasKey = <o, k extends string>(
 type Category = {
     categoryName: string,
     buttonsType: string,
-    children: Category[] | {itemName: string}[]
+    children: (Category | {itemName: string})[]
 }
 
-type ParsedCategory = (string | Record<Category["categoryName"], string[]>)[]
-const parsedConstructionCategories: Record<Category["categoryName"], ParsedCategory> = {};
+type ParsedCategoryValue = string | Record<Category["categoryName"], string[]>
+type ParsedCategory = Record<Category["categoryName"], ParsedCategoryValue[]>;
+
+const parsedConstructionCategories: ParsedCategory = {};
 function recurseConstructionCategory(category: Category) {
-    const categoryItems: (string | Record<Category["categoryName"], string[]>)[] = []
+    const categoryItems: ParsedCategoryValue[] = []
     for (const child of category.children) {
         if (hasKey(child, "categoryName")) {
             // Is a sub-category
@@ -30,6 +32,6 @@ function recurseConstructionCategory(category: Category) {
 }
 
 for (const rootCategory of constructionCategories["categories"]) {
-    parsedConstructionCategories[rootCategory.categoryName] = recurseConstructionCategory(rootCategory as Category);
+    parsedConstructionCategories[rootCategory.categoryName] = recurseConstructionCategory(rootCategory);
 }
 console.log(JSON.stringify(parsedConstructionCategories, null, 2));
