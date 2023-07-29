@@ -43,94 +43,8 @@ for (const rootCategory of constructionCategories["categories"]) {
     parsedConstructionCategories[rootCategory.categoryName] =
         recurseConstructionCategory(rootCategory);
 }
-console.log(JSON.stringify(parsedConstructionCategories, null, 2));
-
-type ResourceQuantity = {
-    resourceName: string;
-    amount: number;
-};
-
-type ThreeDimensionalCoord = {
-    // NB: Can have negatives (e.g for netEdges)
-    x: number;
-    y: number;
-    z: number;
-};
-
-type BoxCollider = { type: "box"; center: ThreeDimensionalCoord; size: ThreeDimensionalCoord };
-type CapsuleCollider = {
-    type: "capsule";
-    center: ThreeDimensionalCoord;
-    radius: number;
-    height: number;
-};
-type Collider = BoxCollider | CapsuleCollider;
-
-type ProductionDefinition = {
-    consumables: ResourceQuantity[] | string[]; // string[] for e.g. storehouse
-    producables: ResourceQuantity[];
-    timeSteps: number;
-    powerNeeded?: number;
-    maxWorkers: number;
-    yieldResourceName?: string;
-    hasResourceRotation?: boolean;
-};
-
-type BaseProductionLogic = {
-    type: string;
-    productionDefinition?: ProductionDefinition;
-    powerNeeded?: number;
-    nextLevelBuilding?: keyof Buildings;
-};
-
-type HabitatProductionLogic = {
-    type: "habitat";
-    habitatLevel: number;
-    downgrade: string;
-    maxInhabitants: 52;
-    powerNeededForTenPeople: number;
-};
-
-type Edge = {
-    type: string;
-    name: string;
-    startPos: ThreeDimensionalCoord;
-    endPos: ThreeDimensionalCoord;
-    trafficType: string;
-};
-
-type BuildingConnectorPoints = {
-    powerLine: ThreeDimensionalCoord[];
-};
 
 type Building = typeof buildings[BuildingName];
-// type Building = {
-//     costs?: ResourceQuantity[];
-//     localizationOverride?: string;
-//     buildingSystem?: string;
-//     requiredTech?: string[];
-//     buildingSound?: string;
-//     workingSound?: string;
-//     shrinkColliders?: boolean;
-//     colliders: Collider[];
-//     modelVariations?: number;
-//     productionLogic?: BaseProductionLogic | HabitatProductionLogic;
-//     buildingConnectorPoints?: BuildingConnectorPoints;
-//     windEfficiencyRadius?: number;
-//     netEdges?: Edge[];
-//     sideRoadOffset?: ThreeDimensionalCoord;
-//     pipeResourceNames?: string[];
-//     isGondolaStation?: boolean;
-//     distanceCostMultiplier?: number;
-//     placesBuildingConnector?: string;
-//     inBetweenObject?: string;
-//     stationModule?: string;
-//     doesAlwaysWork?: boolean;
-//     interactable?: boolean;
-//     doesAffectTerrain?: boolean;
-//     hasRoadConnection?: boolean;
-//     buildingTiltRatio?: number;
-// };
 
 type ParsedBuildingItemQuantity = Record<string, number>;
 type ParsedBuilding = {
@@ -223,7 +137,7 @@ function getInputFromRawBuilding(rawBuilding: Building) {
     const consumables = getConsumablesOfRawBuilding(rawBuilding);
     if (consumables.length === 0) return parsedInput;
     if (typeof consumables[0] === "string") return parsedInput; // TODO: Decide what should be returned as input for storage houses
-    for (const consumable of consumables as ResourceQuantity[]) {
+    for (const consumable of consumables) {
         parsedInput[consumable.resourceName] = consumable.amount;
     }
     return parsedInput;
