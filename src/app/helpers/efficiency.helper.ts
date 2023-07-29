@@ -1,7 +1,7 @@
 import { Injectable } from '@morgan-stanley/needle';
 import { Observable, Subject } from 'rxjs';
 
-import { ParsedBuilding, factoryLookup } from "../constants";
+import { factoryLookup, ParsedBuilding } from '../constants';
 
 @Injectable()
 export class EfficiencyHelper {
@@ -15,7 +15,7 @@ export class EfficiencyHelper {
 
     public get factories(): ParsedBuilding[] {
         const factorySet = Object.values(factoryLookup).reduce((factories, materialFactories) => {
-            materialFactories.forEach(factory => factories.add(factory));
+            materialFactories.forEach((factory) => factories.add(factory));
             return factories;
         }, new Set<ParsedBuilding>());
 

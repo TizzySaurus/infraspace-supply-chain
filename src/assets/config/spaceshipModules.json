@@ -1,564 +1,537 @@
 {
-  "bridge": {
-    "name": "bridge",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "aluminium",
-          "amount": 350
+    "bridge": {
+        "name": "bridge",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "aluminium",
+                    "amount": 350
+                },
+                {
+                    "resourceName": "electronics",
+                    "amount": 250
+                },
+                {
+                    "resourceName": "plastic",
+                    "amount": 250
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "electronics",
-          "amount": 250
-        },
-        {
-          "resourceName": "plastic",
-          "amount": 250
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["BridgeMain", "BridgeExtensions"],
+        "productionBoosts": [
+            {
+                "resourceName": "electronics",
+                "amount": 1
+            },
+            {
+                "resourceName": "plastic",
+                "amount": 1
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "BridgeMain",
-      "BridgeExtensions"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "electronics",
-        "amount": 1
-      },
-      {
-        "resourceName": "plastic",
-        "amount": 1
-      }
-    ]
-  },
-  "communicationArray": {
-    "name": "communicationArray",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "neuralProcessor",
-          "amount": 150
+    "communicationArray": {
+        "name": "communicationArray",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "neuralProcessor",
+                    "amount": 150
+                },
+                {
+                    "resourceName": "vrEdutainment",
+                    "amount": 300
+                },
+                {
+                    "resourceName": "homeRobot",
+                    "amount": 250
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "vrEdutainment",
-          "amount": 300
-        },
-        {
-          "resourceName": "homeRobot",
-          "amount": 250
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["CommunicationArray"],
+        "productionBoosts": [
+            {
+                "resourceName": "neuralProcessor",
+                "amount": 1
+            },
+            {
+                "resourceName": "vrEdutainment",
+                "amount": 2
+            },
+            {
+                "resourceName": "homeRobot",
+                "amount": 2
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "CommunicationArray"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "neuralProcessor",
-        "amount": 1
-      },
-      {
-        "resourceName": "vrEdutainment",
-        "amount": 2
-      },
-      {
-        "resourceName": "homeRobot",
-        "amount": 2
-      }
-    ]
-  },
-  "computerDeck": {
-    "name": "computerDeck",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "computer",
-          "amount": 250
+    "computerDeck": {
+        "name": "computerDeck",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "computer",
+                    "amount": 250
+                },
+                {
+                    "resourceName": "holoDisplay",
+                    "amount": 100
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "holoDisplay",
-          "amount": 100
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["ComputerDeck"],
+        "productionBoosts": [
+            {
+                "resourceName": "holoDisplay",
+                "amount": 1
+            },
+            {
+                "resourceName": "computer",
+                "amount": 2
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "ComputerDeck"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "holoDisplay",
-        "amount": 1
-      },
-      {
-        "resourceName": "computer",
-        "amount": 2
-      }
-    ]
-  },
-  "ftlEngine": {
-    "name": "ftlEngine",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "reinforcedIridium",
-          "amount": 125
+    "ftlEngine": {
+        "name": "ftlEngine",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "reinforcedIridium",
+                    "amount": 125
+                },
+                {
+                    "resourceName": "aiControlUnit",
+                    "amount": 225
+                },
+                {
+                    "resourceName": "motor",
+                    "amount": 350
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "aiControlUnit",
-          "amount": 225
-        },
-        {
-          "resourceName": "motor",
-          "amount": 350
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["FTLEngine"],
+        "productionBoosts": [
+            {
+                "resourceName": "reinforcedIridium",
+                "amount": 1
+            },
+            {
+                "resourceName": "aiControlUnit",
+                "amount": 2
+            },
+            {
+                "resourceName": "motor",
+                "amount": 2
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "FTLEngine"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "reinforcedIridium",
-        "amount": 1
-      },
-      {
-        "resourceName": "aiControlUnit",
-        "amount": 2
-      },
-      {
-        "resourceName": "motor",
-        "amount": 2
-      }
-    ]
-  },
-  "ftlFuelCells": {
-    "name": "ftlFuelCells",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "industrialChemicals",
-          "amount": 300
+    "ftlFuelCells": {
+        "name": "ftlFuelCells",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "industrialChemicals",
+                    "amount": 300
+                },
+                {
+                    "resourceName": "superconductor",
+                    "amount": 75
+                },
+                {
+                    "resourceName": "sciencePack3",
+                    "amount": 125
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "superconductor",
-          "amount": 75
-        },
-        {
-          "resourceName": "sciencePack3",
-          "amount": 125
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["FTLFuelCells"],
+        "productionBoosts": [
+            {
+                "resourceName": "superconductor",
+                "amount": 1
+            },
+            {
+                "resourceName": "industrialChemicals",
+                "amount": 1
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "FTLFuelCells"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "superconductor",
-        "amount": 1
-      },
-      {
-        "resourceName": "industrialChemicals",
-        "amount": 1
-      }
-    ]
-  },
-  "ftlTurbine": {
-    "name": "ftlTurbine",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "neuralProcessor",
-          "amount": 150
+    "ftlTurbine": {
+        "name": "ftlTurbine",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "neuralProcessor",
+                    "amount": 150
+                },
+                {
+                    "resourceName": "copperBar",
+                    "amount": 350
+                },
+                {
+                    "resourceName": "distilledWater",
+                    "amount": 150
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "copperBar",
-          "amount": 350
-        },
-        {
-          "resourceName": "distilledWater",
-          "amount": 150
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["FTLTurbine"],
+        "productionBoosts": [
+            {
+                "resourceName": "industrialRobot",
+                "amount": 2
+            },
+            {
+                "resourceName": "distilledWater",
+                "amount": 1
+            },
+            {
+                "resourceName": "copperBar",
+                "amount": 1
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "FTLTurbine"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "industrialRobot",
-        "amount": 2
-      },
-      {
-        "resourceName": "distilledWater",
-        "amount": 1
-      },
-      {
-        "resourceName": "copperBar",
-        "amount": 1
-      }
-    ]
-  },
-  "orbitalScanners": {
-    "name": "orbitalScanners",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "superconductingCoil",
-          "amount": 75
+    "orbitalScanners": {
+        "name": "orbitalScanners",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "superconductingCoil",
+                    "amount": 75
+                },
+                {
+                    "resourceName": "advancedFilteringMesh",
+                    "amount": 200
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "advancedFilteringMesh",
-          "amount": 200
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["OrbitalScanners"],
+        "productionBoosts": [
+            {
+                "resourceName": "superconductingCoil",
+                "amount": 1
+            },
+            {
+                "resourceName": "advancedFilteringMesh",
+                "amount": 1
+            },
+            {
+                "resourceName": "filteringMesh",
+                "amount": 2
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "OrbitalScanners"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "superconductingCoil",
-        "amount": 1
-      },
-      {
-        "resourceName": "advancedFilteringMesh",
-        "amount": 1
-      },
-      {
-        "resourceName": "filteringMesh",
-        "amount": 2
-      }
-    ]
-  },
-  "passengerDeck": {
-    "name": "passengerDeck",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "water",
-          "amount": 500
+    "passengerDeck": {
+        "name": "passengerDeck",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "water",
+                    "amount": 500
+                },
+                {
+                    "resourceName": "oxygen",
+                    "amount": 500
+                },
+                {
+                    "resourceName": "goodFood",
+                    "amount": 250
+                },
+                {
+                    "resourceName": "survivalFood",
+                    "amount": 250
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "oxygen",
-          "amount": 500
-        },
-        {
-          "resourceName": "goodFood",
-          "amount": 250
-        },
-        {
-          "resourceName": "survivalFood",
-          "amount": 250
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["Passenger"],
+        "productionBoosts": [
+            {
+                "resourceName": "goodFood",
+                "amount": 1
+            },
+            {
+                "resourceName": "survivalFood",
+                "amount": 1
+            }
+        ],
+        "habitatConsumptionFactor": 0.85
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "Passenger"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "goodFood",
-        "amount": 1
-      },
-      {
-        "resourceName": "survivalFood",
-        "amount": 1
-      }
-    ],
-    "habitatConsumptionFactor": 0.85
-  },
-  "hull": {
-    "name": "hull",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "heatExchanger",
-          "amount": 350
+    "hull": {
+        "name": "hull",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "heatExchanger",
+                    "amount": 350
+                },
+                {
+                    "resourceName": "sensor",
+                    "amount": 350
+                },
+                {
+                    "resourceName": "chemicals",
+                    "amount": 350
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "sensor",
-          "amount": 350
-        },
-        {
-          "resourceName": "chemicals",
-          "amount": 350
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["Spaceship"],
+        "productionBoosts": [
+            {
+                "resourceName": "sensor",
+                "amount": 2
+            },
+            {
+                "resourceName": "heatExchanger",
+                "amount": 2
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "Spaceship"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "sensor",
-        "amount": 2
-      },
-      {
-        "resourceName": "heatExchanger",
-        "amount": 2
-      }
-    ]
-  },
-  "radiationShield": {
-    "name": "radiationShield",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "radiationCore",
-          "amount": 450
+    "radiationShield": {
+        "name": "radiationShield",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "radiationCore",
+                    "amount": 450
+                },
+                {
+                    "resourceName": "enrichedUranium",
+                    "amount": 350
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "enrichedUranium",
-          "amount": 350
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["RadiationShield"],
+        "productionBoosts": [
+            {
+                "resourceName": "radiationCore",
+                "amount": 4
+            },
+            {
+                "resourceName": "enrichedUranium",
+                "amount": 3
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "RadiationShield"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "radiationCore",
-        "amount": 4
-      },
-      {
-        "resourceName": "enrichedUranium",
-        "amount": 3
-      }
-    ]
-  },
-  "storageDeck": {
-    "name": "storageDeck",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "concrete",
-          "amount": 1500
+    "storageDeck": {
+        "name": "storageDeck",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "concrete",
+                    "amount": 1500
+                },
+                {
+                    "resourceName": "steel",
+                    "amount": 1500
+                },
+                {
+                    "resourceName": "homeAppliance",
+                    "amount": 200
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "steel",
-          "amount": 1500
-        },
-        {
-          "resourceName": "homeAppliance",
-          "amount": 200
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["StorageDeck"],
+        "productionBoosts": [
+            {
+                "resourceName": "concrete",
+                "amount": 3
+            },
+            {
+                "resourceName": "steel",
+                "amount": 3
+            },
+            {
+                "resourceName": "homeAppliance",
+                "amount": 2
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "StorageDeck"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "concrete",
-        "amount": 3
-      },
-      {
-        "resourceName": "steel",
-        "amount": 3
-      },
-      {
-        "resourceName": "homeAppliance",
-        "amount": 2
-      }
-    ]
-  },
-  "telescope": {
-    "name": "telescope",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "adamantine",
-          "amount": 150
+    "telescope": {
+        "name": "telescope",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "adamantine",
+                    "amount": 150
+                },
+                {
+                    "resourceName": "sciencePack4",
+                    "amount": 50
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "sciencePack4",
-          "amount": 50
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["Telescope"],
+        "productionBoosts": [
+            {
+                "resourceName": "adamantine",
+                "amount": 5
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "Telescope"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "adamantine",
-        "amount": 5
-      }
-    ]
-  },
-  "thermalSystems": {
-    "name": "thermalSystems",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "crudeOil",
-          "amount": 250
+    "thermalSystems": {
+        "name": "thermalSystems",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "crudeOil",
+                    "amount": 250
+                },
+                {
+                    "resourceName": "chemicals",
+                    "amount": 250
+                },
+                {
+                    "resourceName": "methane",
+                    "amount": 250
+                },
+                {
+                    "resourceName": "sciencePack1",
+                    "amount": 150
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "chemicals",
-          "amount": 250
-        },
-        {
-          "resourceName": "methane",
-          "amount": 250
-        },
-        {
-          "resourceName": "sciencePack1",
-          "amount": 150
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
+        "requiredSteps": 1,
+        "modelNames": ["ThermalSystems"],
+        "productionBoosts": [
+            {
+                "resourceName": "chemicals",
+                "amount": 1
+            },
+            {
+                "resourceName": "organicWaste",
+                "amount": 1
+            },
+            {
+                "resourceName": "methane",
+                "amount": 1
+            }
+        ]
     },
-    "requiredSteps": 1,
-    "modelNames": [
-      "ThermalSystems"
-    ],
-    "productionBoosts": [
-      {
-        "resourceName": "chemicals",
-        "amount": 1
-      },
-      {
-        "resourceName": "organicWaste",
-        "amount": 1
-      },
-      {
-        "resourceName": "methane",
-        "amount": 1
-      }
-    ]
-  },
-  "laserCannon": {
-    "name": "laserCannon",
-    "productionDefinition": {
-      "consumables": [
-        {
-          "resourceName": "microchip",
-          "amount": 75
+    "laserCannon": {
+        "name": "laserCannon",
+        "productionDefinition": {
+            "consumables": [
+                {
+                    "resourceName": "microchip",
+                    "amount": 75
+                },
+                {
+                    "resourceName": "nanotubes",
+                    "amount": 75
+                },
+                {
+                    "resourceName": "sciencePack2",
+                    "amount": 100
+                }
+            ],
+            "producables": [
+                {
+                    "resourceName": "spaceshipModule",
+                    "amount": 1
+                }
+            ],
+            "timeSteps": 300000
         },
-        {
-          "resourceName": "nanotubes",
-          "amount": 75
-        },
-        {
-          "resourceName": "sciencePack2",
-          "amount": 100
-        }
-      ],
-      "producables": [
-        {
-          "resourceName": "spaceshipModule",
-          "amount": 1
-        }
-      ],
-      "timeSteps": 300000
-    },
-    "requiredSteps": 1,
-    "modelNames": []
-  }
+        "requiredSteps": 1,
+        "modelNames": []
+    }
 }

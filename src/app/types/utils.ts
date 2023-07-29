@@ -16,9 +16,7 @@ export const hasKey = <o, k extends string>(o: o, k: k): o is Extract<o, { [_ in
     return valueAtKey !== undefined && valueAtKey !== null;
 };
 
-export type unionToTuple<t> = unionToTupleRecurse<t, []> extends infer result
-    ? conform<result, t[]>
-    : never;
+export type unionToTuple<t> = unionToTupleRecurse<t, []> extends infer result ? conform<result, t[]> : never;
 
 type conform<t, base> = t extends base ? t : base;
 type unionToTupleRecurse<t, result extends unknown[]> = getLastBranch<t> extends infer current
@@ -26,15 +24,11 @@ type unionToTupleRecurse<t, result extends unknown[]> = getLastBranch<t> extends
         ? result
         : unionToTupleRecurse<Exclude<t, current>, [current, ...result]>
     : never;
-type getLastBranch<t> = intersectUnion<t extends unknown ? (x: t) => void : never> extends (
-    x: infer branch
-) => void
+type getLastBranch<t> = intersectUnion<t extends unknown ? (x: t) => void : never> extends (x: infer branch) => void
     ? branch
     : never;
 
-type intersectUnion<t> = (t extends unknown ? (_: t) => void : never) extends (
-    _: infer intersection
-) => void
+type intersectUnion<t> = (t extends unknown ? (_: t) => void : never) extends (_: infer intersection) => void
     ? intersection
     : never;
 
@@ -46,15 +40,9 @@ type entryOf<o> = evaluate<
 type entriesOf<o extends object> = entryOf<o>[];
 export const entriesOf = <o extends object>(o: o) => Object.entries(o) as entriesOf<o>;
 
-type Entry<key extends PropertyKey = PropertyKey, value = unknown> = readonly [
-    key: key,
-    value: value
-];
+type Entry<key extends PropertyKey = PropertyKey, value = unknown> = readonly [key: key, value: value];
 
-type fromEntries<entries, result = {}> = entries extends readonly [
-    Entry<infer k, infer v>,
-    ...infer tail
-]
+type fromEntries<entries, result = {}> = entries extends readonly [Entry<infer k, infer v>, ...infer tail]
     ? fromEntries<tail, result & { [_ in k]: v }>
     : evaluate<result>;
 
@@ -66,12 +54,8 @@ export const transform = <o extends object, transformed extends Entry | readonly
     flatMapEntry: (entry: entryOf<o>) => transformed
 ) =>
     Object.fromEntries(
-        entriesOf(o).flatMap(entry => {
+        entriesOf(o).flatMap((entry) => {
             const result = flatMapEntry(entry);
             return Array.isArray(result[0]) ? result : [result];
         })
-    ) as evaluate<
-        intersectUnion<
-            fromEntries<transformed extends readonly Entry[] ? transformed : [transformed]>
-        >
-    >;
+    ) as evaluate<intersectUnion<fromEntries<transformed extends readonly Entry[] ? transformed : [transformed]>>>;

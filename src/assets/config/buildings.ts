@@ -4,15 +4,15 @@ export const buildings = {
     sandMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -26,12 +26,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "sand",
+                        resourceName: 'sand',
                         amount: 1,
                     },
                 ],
@@ -49,16 +49,16 @@ export const buildings = {
     largeSandMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
         ],
-        requiredTech: ["largeMines"],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        requiredTech: ['largeMines'],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -72,12 +72,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "sand",
+                        resourceName: 'sand',
                         amount: 2,
                     },
                 ],
@@ -95,15 +95,15 @@ export const buildings = {
     sulfurMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -117,19 +117,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "sulfur",
+                        resourceName: 'sulfur',
                         amount: 1,
                     },
                 ],
                 timeSteps: 25000,
                 powerNeeded: 1,
                 maxWorkers: 2,
-                yieldResourceName: "SulfurCollider",
+                yieldResourceName: 'SulfurCollider',
             },
         },
         sideRoadOffset: {
@@ -141,16 +141,16 @@ export const buildings = {
     largeSulfurMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
         ],
-        requiredTech: ["largeMines"],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        requiredTech: ['largeMines'],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -164,19 +164,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "sulfur",
+                        resourceName: 'sulfur',
                         amount: 2,
                     },
                 ],
                 timeSteps: 25000,
                 powerNeeded: 4,
                 maxWorkers: 2,
-                yieldResourceName: "SulfurCollider",
+                yieldResourceName: 'SulfurCollider',
             },
         },
         sideRoadOffset: {
@@ -188,15 +188,15 @@ export const buildings = {
     ironMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -210,19 +210,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "ironOre",
+                        resourceName: 'ironOre',
                         amount: 1,
                     },
                 ],
                 timeSteps: 25000,
                 powerNeeded: 2,
                 maxWorkers: 2,
-                yieldResourceName: "IronCollider",
+                yieldResourceName: 'IronCollider',
                 hasResourceRotation: true,
             },
         },
@@ -235,16 +235,16 @@ export const buildings = {
     largeIronMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
         ],
-        requiredTech: ["largeMines"],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        requiredTech: ['largeMines'],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -258,19 +258,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "ironOre",
+                        resourceName: 'ironOre',
                         amount: 2,
                     },
                 ],
                 timeSteps: 25000,
                 powerNeeded: 5,
                 maxWorkers: 3,
-                yieldResourceName: "IronCollider",
+                yieldResourceName: 'IronCollider',
                 hasResourceRotation: true,
             },
         },
@@ -283,16 +283,16 @@ export const buildings = {
     copperMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["electronics"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['electronics'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -306,19 +306,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "copperOre",
+                        resourceName: 'copperOre',
                         amount: 1,
                     },
                 ],
                 timeSteps: 25000,
                 powerNeeded: 2,
                 maxWorkers: 2,
-                yieldResourceName: "CopperCollider",
+                yieldResourceName: 'CopperCollider',
                 hasResourceRotation: true,
             },
         },
@@ -331,16 +331,16 @@ export const buildings = {
     largeCopperMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 7500,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["electronics", "largeMines"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['electronics', 'largeMines'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -354,19 +354,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "copperOre",
+                        resourceName: 'copperOre',
                         amount: 2,
                     },
                 ],
                 timeSteps: 25000,
                 powerNeeded: 6,
                 maxWorkers: 3,
-                yieldResourceName: "CopperCollider",
+                yieldResourceName: 'CopperCollider',
                 hasResourceRotation: true,
             },
         },
@@ -379,16 +379,16 @@ export const buildings = {
     aluminiumMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["aluminiumMining"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['aluminiumMining'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -402,19 +402,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "aluminium",
+                        resourceName: 'aluminium',
                         amount: 1,
                     },
                 ],
                 timeSteps: 50000,
                 powerNeeded: 2,
                 maxWorkers: 4,
-                yieldResourceName: "AluminiumCollider",
+                yieldResourceName: 'AluminiumCollider',
                 hasResourceRotation: true,
             },
         },
@@ -427,16 +427,16 @@ export const buildings = {
     largeAluminiumMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 12500,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["aluminiumMining", "largeMines"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['aluminiumMining', 'largeMines'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -450,19 +450,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "aluminium",
+                        resourceName: 'aluminium',
                         amount: 2,
                     },
                 ],
                 timeSteps: 50000,
                 powerNeeded: 8,
                 maxWorkers: 6,
-                yieldResourceName: "AluminiumCollider",
+                yieldResourceName: 'AluminiumCollider',
                 hasResourceRotation: true,
             },
         },
@@ -475,20 +475,20 @@ export const buildings = {
     uraniumMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["uraniumMining"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['uraniumMining'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -502,19 +502,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "uranium",
+                        resourceName: 'uranium',
                         amount: 1,
                     },
                 ],
                 timeSteps: 100000,
                 powerNeeded: 5,
                 maxWorkers: 5,
-                yieldResourceName: "UraniumCollider",
+                yieldResourceName: 'UraniumCollider',
                 hasResourceRotation: true,
             },
         },
@@ -527,20 +527,20 @@ export const buildings = {
     largeUraniumMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 12500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["uraniumMining", "largeMines"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['uraniumMining', 'largeMines'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -554,19 +554,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "uranium",
+                        resourceName: 'uranium',
                         amount: 2,
                     },
                 ],
                 timeSteps: 100000,
                 powerNeeded: 12,
                 maxWorkers: 8,
-                yieldResourceName: "UraniumCollider",
+                yieldResourceName: 'UraniumCollider',
                 hasResourceRotation: true,
             },
         },
@@ -579,20 +579,20 @@ export const buildings = {
     iridiumMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["iridiumMining"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['iridiumMining'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -606,19 +606,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "iridium",
+                        resourceName: 'iridium',
                         amount: 1,
                     },
                 ],
                 timeSteps: 50000,
                 powerNeeded: 4,
                 maxWorkers: 4,
-                yieldResourceName: "IridiumCollider",
+                yieldResourceName: 'IridiumCollider',
                 hasResourceRotation: true,
             },
         },
@@ -631,20 +631,20 @@ export const buildings = {
     largeIridiumMine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 12500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 12500,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
-        requiredTech: ["iridiumMining", "largeMines"],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
+        requiredTech: ['iridiumMining', 'largeMines'],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -658,19 +658,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "iridium",
+                        resourceName: 'iridium',
                         amount: 2,
                     },
                 ],
                 timeSteps: 50000,
                 powerNeeded: 12,
                 maxWorkers: 8,
-                yieldResourceName: "IridiumCollider",
+                yieldResourceName: 'IridiumCollider',
                 hasResourceRotation: true,
             },
         },
@@ -683,15 +683,15 @@ export const buildings = {
     concreteFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1500,
             },
         ],
-        buildingSound: "build production",
-        workingSound: "buildings_Concrete_Factory",
+        buildingSound: 'build production',
+        workingSound: 'buildings_Concrete_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -705,21 +705,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sulfur",
+                        resourceName: 'sulfur',
                         amount: 1,
                     },
                     {
-                        resourceName: "sand",
+                        resourceName: 'sand',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "concrete",
+                        resourceName: 'concrete',
                         amount: 5,
                     },
                 ],
@@ -737,16 +737,16 @@ export const buildings = {
     steelMill: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
         ],
-        requiredTech: ["steelMaking"],
-        buildingSound: "build production",
-        workingSound: "buildings_Concrete_Factory",
+        requiredTech: ['steelMaking'],
+        buildingSound: 'build production',
+        workingSound: 'buildings_Concrete_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -760,25 +760,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "ironOre",
+                        resourceName: 'ironOre',
                         amount: 1,
                     },
                     {
-                        resourceName: "carbon",
+                        resourceName: 'carbon',
                         amount: 1,
                     },
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "steel",
+                        resourceName: 'steel',
                         amount: 5,
                     },
                 ],
@@ -792,24 +792,24 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     motorFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 3000,
             },
         ],
-        requiredTech: ["motors"],
-        buildingSound: "build refinement",
+        requiredTech: ['motors'],
+        buildingSound: 'build refinement',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -823,25 +823,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "copperBar",
+                        resourceName: 'copperBar',
                         amount: 2,
                     },
                     {
-                        resourceName: "steel",
+                        resourceName: 'steel',
                         amount: 5,
                     },
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "motor",
+                        resourceName: 'motor',
                         amount: 4,
                     },
                 ],
@@ -855,21 +855,21 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     electronicsFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
         ],
-        requiredTech: ["electronics"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['electronics'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.35,
@@ -883,21 +883,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "ironOre",
+                        resourceName: 'ironOre',
                         amount: 2,
                     },
                     {
-                        resourceName: "copperOre",
+                        resourceName: 'copperOre',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "electronics",
+                        resourceName: 'electronics',
                         amount: 2,
                     },
                 ],
@@ -915,20 +915,20 @@ export const buildings = {
     homeAppliancesFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 4000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1000,
             },
         ],
-        requiredTech: ["electronics"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['electronics'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -942,21 +942,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "electronics",
+                        resourceName: 'electronics',
                         amount: 2,
                     },
                     {
-                        resourceName: "plastic",
+                        resourceName: 'plastic',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "homeAppliance",
+                        resourceName: 'homeAppliance',
                         amount: 3,
                     },
                 ],
@@ -974,20 +974,20 @@ export const buildings = {
     microchipFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2000,
             },
         ],
-        requiredTech: ["computers"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['computers'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -1001,21 +1001,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sand",
+                        resourceName: 'sand',
                         amount: 3,
                     },
                     {
-                        resourceName: "electronics",
+                        resourceName: 'electronics',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "microchip",
+                        resourceName: 'microchip',
                         amount: 3,
                     },
                 ],
@@ -1033,20 +1033,20 @@ export const buildings = {
     computerFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["computers"],
-        buildingSound: "build production",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['computers'],
+        buildingSound: 'build production',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -1060,25 +1060,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "plastic",
+                        resourceName: 'plastic',
                         amount: 4,
                     },
                     {
-                        resourceName: "microchip",
+                        resourceName: 'microchip',
                         amount: 4,
                     },
                     {
-                        resourceName: "aluminium",
+                        resourceName: 'aluminium',
                         amount: 3,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "computer",
+                        resourceName: 'computer',
                         amount: 8,
                     },
                 ],
@@ -1096,19 +1096,19 @@ export const buildings = {
     nanotubesFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["nanotubes"],
-        buildingSound: "build refinement",
+        requiredTech: ['nanotubes'],
+        buildingSound: 'build refinement',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2.25,
@@ -1123,21 +1123,21 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "industrialChemicals",
+                        resourceName: 'industrialChemicals',
                         amount: 2,
                     },
                     {
-                        resourceName: "carbon",
+                        resourceName: 'carbon',
                         amount: 6,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "nanotubes",
+                        resourceName: 'nanotubes',
                         amount: 4,
                     },
                 ],
@@ -1155,20 +1155,20 @@ export const buildings = {
     neuralProcessorFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 7500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["neuralProcessors"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['neuralProcessors'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2.25,
@@ -1183,21 +1183,21 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "nanotubes",
+                        resourceName: 'nanotubes',
                         amount: 6,
                     },
                     {
-                        resourceName: "microchip",
+                        resourceName: 'microchip',
                         amount: 8,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "neuralProcessor",
+                        resourceName: 'neuralProcessor',
                         amount: 3,
                     },
                 ],
@@ -1215,20 +1215,20 @@ export const buildings = {
     homeRobotFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["homeRobots"],
-        buildingSound: "build production",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['homeRobots'],
+        buildingSound: 'build production',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.25,
@@ -1242,25 +1242,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sensor",
+                        resourceName: 'sensor',
                         amount: 4,
                     },
                     {
-                        resourceName: "motor",
+                        resourceName: 'motor',
                         amount: 4,
                     },
                     {
-                        resourceName: "neuralProcessor",
+                        resourceName: 'neuralProcessor',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "homeRobot",
+                        resourceName: 'homeRobot',
                         amount: 6,
                     },
                 ],
@@ -1278,20 +1278,20 @@ export const buildings = {
     industrialRobotFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["industrialRobots"],
-        buildingSound: "build production",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['industrialRobots'],
+        buildingSound: 'build production',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -1305,25 +1305,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sensor",
+                        resourceName: 'sensor',
                         amount: 4,
                     },
                     {
-                        resourceName: "motor",
+                        resourceName: 'motor',
                         amount: 4,
                     },
                     {
-                        resourceName: "neuralProcessor",
+                        resourceName: 'neuralProcessor',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "industrialRobot",
+                        resourceName: 'industrialRobot',
                         amount: 6,
                     },
                 ],
@@ -1341,19 +1341,19 @@ export const buildings = {
     highTechWorkshop: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 20000,
             },
         ],
-        requiredTech: ["highTechWorkshop"],
-        buildingSound: "build production",
+        requiredTech: ['highTechWorkshop'],
+        buildingSound: 'build production',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -1368,29 +1368,29 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "reinforcedIridium",
+                        resourceName: 'reinforcedIridium',
                         amount: 4,
                     },
                     {
-                        resourceName: "nanotubes",
+                        resourceName: 'nanotubes',
                         amount: 2,
                     },
                     {
-                        resourceName: "sensor",
+                        resourceName: 'sensor',
                         amount: 4,
                     },
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "highTechTool",
+                        resourceName: 'highTechTool',
                         amount: 6,
                     },
                 ],
@@ -1404,24 +1404,24 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     vrEdutainmentFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 20000,
             },
         ],
-        requiredTech: ["holoDisplays"],
-        buildingSound: "build production",
+        requiredTech: ['holoDisplays'],
+        buildingSound: 'build production',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -1436,21 +1436,21 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "neuralProcessor",
+                        resourceName: 'neuralProcessor',
                         amount: 4,
                     },
                     {
-                        resourceName: "holoDisplay",
+                        resourceName: 'holoDisplay',
                         amount: 8,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "vrEdutainment",
+                        resourceName: 'vrEdutainment',
                         amount: 6,
                     },
                 ],
@@ -1468,20 +1468,20 @@ export const buildings = {
     reinforcedIridiumFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["iridiumMining"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Concrete_Factory",
+        requiredTech: ['iridiumMining'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Concrete_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -1495,25 +1495,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "iridium",
+                        resourceName: 'iridium',
                         amount: 2,
                     },
                     {
-                        resourceName: "industrialChemicals",
+                        resourceName: 'industrialChemicals',
                         amount: 1,
                     },
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "reinforcedIridium",
+                        resourceName: 'reinforcedIridium',
                         amount: 2,
                     },
                 ],
@@ -1527,24 +1527,24 @@ export const buildings = {
             y: 0,
             z: 1.25,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     holoDisplayFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 7500,
             },
         ],
-        requiredTech: ["holoDisplays"],
-        buildingSound: "build refinement",
+        requiredTech: ['holoDisplays'],
+        buildingSound: 'build refinement',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -1559,25 +1559,25 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "nanotubes",
+                        resourceName: 'nanotubes',
                         amount: 2,
                     },
                     {
-                        resourceName: "reinforcedIridium",
+                        resourceName: 'reinforcedIridium',
                         amount: 2,
                     },
                     {
-                        resourceName: "sensor",
+                        resourceName: 'sensor',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "holoDisplay",
+                        resourceName: 'holoDisplay',
                         amount: 2,
                     },
                 ],
@@ -1595,19 +1595,19 @@ export const buildings = {
     superconductorFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 20000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
         ],
-        requiredTech: ["superconductor"],
-        buildingSound: "build production",
+        requiredTech: ['superconductor'],
+        buildingSound: 'build production',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 5.25,
@@ -1622,25 +1622,25 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "iridium",
+                        resourceName: 'iridium',
                         amount: 6,
                     },
                     {
-                        resourceName: "sulfur",
+                        resourceName: 'sulfur',
                         amount: 10,
                     },
                     {
-                        resourceName: "heatExchanger",
+                        resourceName: 'heatExchanger',
                         amount: 8,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "superconductor",
+                        resourceName: 'superconductor',
                         amount: 2,
                     },
                 ],
@@ -1658,20 +1658,20 @@ export const buildings = {
     aiControlUnitFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 20000,
             },
         ],
-        requiredTech: ["aiControlUnits"],
-        buildingSound: "build production",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['aiControlUnits'],
+        buildingSound: 'build production',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 5.5,
@@ -1686,25 +1686,25 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sensor",
+                        resourceName: 'sensor',
                         amount: 10,
                     },
                     {
-                        resourceName: "neuralProcessor",
+                        resourceName: 'neuralProcessor',
                         amount: 6,
                     },
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 8,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "aiControlUnit",
+                        resourceName: 'aiControlUnit',
                         amount: 4,
                     },
                 ],
@@ -1718,24 +1718,24 @@ export const buildings = {
             y: 0,
             z: 1.25,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     radiationCoreFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 20000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 40000,
             },
         ],
-        requiredTech: ["uraniumMining"],
-        buildingSound: "build refinement",
+        requiredTech: ['uraniumMining'],
+        buildingSound: 'build refinement',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 4,
@@ -1750,21 +1750,21 @@ export const buildings = {
         ],
         modelVariations: 2,
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "reinforcedIridium",
+                        resourceName: 'reinforcedIridium',
                         amount: 8,
                     },
                     {
-                        resourceName: "enrichedUranium",
+                        resourceName: 'enrichedUranium',
                         amount: 10,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "radiationCore",
+                        resourceName: 'radiationCore',
                         amount: 8,
                     },
                 ],
@@ -1782,18 +1782,18 @@ export const buildings = {
     sciencePack1Factory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        buildingSound: "build science",
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -1807,21 +1807,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 2,
                     },
                     {
-                        resourceName: "carbon",
+                        resourceName: 'carbon',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "sciencePack1",
+                        resourceName: 'sciencePack1',
                         amount: 1,
                     },
                 ],
@@ -1835,24 +1835,24 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     sciencePack2Factory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 3000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 4000,
             },
         ],
-        requiredTech: ["science2"],
-        buildingSound: "build science",
+        requiredTech: ['science2'],
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.25,
@@ -1866,29 +1866,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sand",
+                        resourceName: 'sand',
                         amount: 2,
                     },
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 4,
                     },
                     {
-                        resourceName: "aluminium",
+                        resourceName: 'aluminium',
                         amount: 1,
                     },
                     {
-                        resourceName: "sciencePack1",
+                        resourceName: 'sciencePack1',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "sciencePack2",
+                        resourceName: 'sciencePack2',
                         amount: 1,
                     },
                 ],
@@ -1906,19 +1906,19 @@ export const buildings = {
     sciencePack3Factory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["science3"],
-        buildingSound: "build science",
+        requiredTech: ['science3'],
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -1932,29 +1932,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "motor",
+                        resourceName: 'motor',
                         amount: 4,
                     },
                     {
-                        resourceName: "organicWaste",
+                        resourceName: 'organicWaste',
                         amount: 2,
                     },
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 4,
                     },
                     {
-                        resourceName: "sciencePack2",
+                        resourceName: 'sciencePack2',
                         amount: 3,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "sciencePack3",
+                        resourceName: 'sciencePack3',
                         amount: 1,
                     },
                 ],
@@ -1968,24 +1968,24 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     sciencePack4Factory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 15000,
             },
         ],
-        requiredTech: ["science4"],
-        buildingSound: "build science",
+        requiredTech: ['science4'],
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -1999,25 +1999,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "aiControlUnit",
+                        resourceName: 'aiControlUnit',
                         amount: 4,
                     },
                     {
-                        resourceName: "radiationCore",
+                        resourceName: 'radiationCore',
                         amount: 8,
                     },
                     {
-                        resourceName: "sciencePack3",
+                        resourceName: 'sciencePack3',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "sciencePack4",
+                        resourceName: 'sciencePack4',
                         amount: 1,
                     },
                 ],
@@ -2035,14 +2035,14 @@ export const buildings = {
     researchLab: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
         ],
-        buildingSound: "build science",
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.25,
@@ -2056,7 +2056,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "research",
+            type: 'research',
             powerNeeded: 1,
         },
         sideRoadOffset: {
@@ -2068,15 +2068,15 @@ export const buildings = {
     storehouse: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
         ],
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         hasRoadConnection: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -2090,14 +2090,14 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "storehouse",
-            consumables: ["concrete", "steel", "car", "adamantine"],
+            type: 'storehouse',
+            consumables: ['concrete', 'steel', 'car', 'adamantine'],
             powerNeeded: 5,
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_concrete_oneWay_threeLane",
+                type: 'road',
+                name: 'road_concrete_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -2108,11 +2108,11 @@ export const buildings = {
                     y: 0.2,
                     z: 3,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_concrete_oneWay_threeLane",
+                type: 'road',
+                name: 'road_concrete_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -2123,21 +2123,21 @@ export const buildings = {
                     y: 0.2,
                     z: 3,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     storehouseSmall: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
         ],
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -2151,8 +2151,8 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "storehouse",
-            consumables: ["concrete", "steel", "car", "adamantine"],
+            type: 'storehouse',
+            consumables: ['concrete', 'steel', 'car', 'adamantine'],
             powerNeeded: 1,
         },
         sideRoadOffset: {
@@ -2164,21 +2164,21 @@ export const buildings = {
     gondolaStation: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 50000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50000,
             },
         ],
-        requiredTech: ["cargoGondolas"],
+        requiredTech: ['cargoGondolas'],
         hasRoadConnection: false,
-        buildingSystem: "pair",
-        buildingSound: "build misc",
+        buildingSystem: 'pair',
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -2193,13 +2193,13 @@ export const buildings = {
         ],
         isGondolaStation: true,
         distanceCostMultiplier: 20,
-        placesBuildingConnector: "gondolaLine",
-        inBetweenObject: "gondolaPole",
-        stationModule: "gondola",
+        placesBuildingConnector: 'gondolaLine',
+        inBetweenObject: 'gondolaPole',
+        stationModule: 'gondola',
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -2210,11 +2210,11 @@ export const buildings = {
                     y: 0.2,
                     z: 6,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -2225,7 +2225,7 @@ export const buildings = {
                     y: 0.2,
                     z: 8,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
         ],
     },
@@ -2234,10 +2234,10 @@ export const buildings = {
         interactable: false,
         doesAffectTerrain: false,
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: -14,
@@ -2257,10 +2257,10 @@ export const buildings = {
         interactable: false,
         doesAffectTerrain: false,
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2278,19 +2278,19 @@ export const buildings = {
     airProcessor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        buildingSound: "build life support",
-        workingSound: "buildings_Atmosphere_Processor",
+        buildingSound: 'build life support',
+        workingSound: 'buildings_Atmosphere_Processor',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -2304,16 +2304,16 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "oxygen",
+                        resourceName: 'oxygen',
                         amount: 1,
                     },
                     {
-                        resourceName: "carbon",
+                        resourceName: 'carbon',
                         amount: 1,
                     },
                 ],
@@ -2327,25 +2327,25 @@ export const buildings = {
             y: 0,
             z: 0.75,
         },
-        pipeResourceNames: ["oxygen"],
+        pipeResourceNames: ['oxygen'],
     },
     oxygenProcessor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        requiredTech: ["particleFiltering"],
-        buildingSound: "build life support",
-        workingSound: "buildings_Atmosphere_Processor",
+        requiredTech: ['particleFiltering'],
+        buildingSound: 'build life support',
+        workingSound: 'buildings_Atmosphere_Processor',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -2359,12 +2359,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "oxygen",
+                        resourceName: 'oxygen',
                         amount: 2,
                     },
                 ],
@@ -2378,25 +2378,25 @@ export const buildings = {
             y: 0,
             z: 0.75,
         },
-        pipeResourceNames: ["oxygen"],
+        pipeResourceNames: ['oxygen'],
     },
     carbonProcessor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        requiredTech: ["particleFiltering"],
-        buildingSound: "build life support",
-        workingSound: "buildings_Atmosphere_Processor",
+        requiredTech: ['particleFiltering'],
+        buildingSound: 'build life support',
+        workingSound: 'buildings_Atmosphere_Processor',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -2410,12 +2410,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "carbon",
+                        resourceName: 'carbon',
                         amount: 2,
                     },
                 ],
@@ -2433,16 +2433,16 @@ export const buildings = {
     basicFarm: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
         ],
-        requiredTech: ["farming"],
-        buildingSound: "build life support",
-        workingSound: "buildings_Basic_Farm",
+        requiredTech: ['farming'],
+        buildingSound: 'build life support',
+        workingSound: 'buildings_Basic_Farm',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2456,17 +2456,17 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "survivalFood",
+                        resourceName: 'survivalFood',
                         amount: 1,
                     },
                 ],
@@ -2480,25 +2480,25 @@ export const buildings = {
             y: 0,
             z: 1.5,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     fertilizerFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["foodProcessing"],
-        buildingSound: "build life support",
-        workingSound: "buildings_Basic_Farm",
+        requiredTech: ['foodProcessing'],
+        buildingSound: 'build life support',
+        workingSound: 'buildings_Basic_Farm',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2512,21 +2512,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sulfur",
+                        resourceName: 'sulfur',
                         amount: 2,
                     },
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "fertilizer",
+                        resourceName: 'fertilizer',
                         amount: 2,
                     },
                 ],
@@ -2544,20 +2544,20 @@ export const buildings = {
     vegetableFarm: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 4000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["foodProcessing"],
-        buildingSound: "build life support",
-        workingSound: "buildings_Basic_Farm",
+        requiredTech: ['foodProcessing'],
+        buildingSound: 'build life support',
+        workingSound: 'buildings_Basic_Farm',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2571,29 +2571,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "fertilizer",
+                        resourceName: 'fertilizer',
                         amount: 2,
                     },
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 3,
                     },
                     {
-                        resourceName: "oxygen",
+                        resourceName: 'oxygen',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "vegetables",
+                        resourceName: 'vegetables',
                         amount: 6,
                     },
                     {
-                        resourceName: "organicWaste",
+                        resourceName: 'organicWaste',
                         amount: 2,
                     },
                 ],
@@ -2607,24 +2607,24 @@ export const buildings = {
             y: 0,
             z: 0.75,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     meatLab: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        requiredTech: ["foodProcessing"],
-        buildingSound: "build life support",
+        requiredTech: ['foodProcessing'],
+        buildingSound: 'build life support',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2638,25 +2638,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 3,
                     },
                     {
-                        resourceName: "stemCell",
+                        resourceName: 'stemCell',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "meat",
+                        resourceName: 'meat',
                         amount: 6,
                     },
                     {
-                        resourceName: "organicWaste",
+                        resourceName: 'organicWaste',
                         amount: 2,
                     },
                 ],
@@ -2670,24 +2670,24 @@ export const buildings = {
             y: 0,
             z: 1.25,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     foodFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 4000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["foodProcessing"],
-        buildingSound: "build life support",
+        requiredTech: ['foodProcessing'],
+        buildingSound: 'build life support',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2701,25 +2701,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "vegetables",
+                        resourceName: 'vegetables',
                         amount: 3,
                     },
                     {
-                        resourceName: "meat",
+                        resourceName: 'meat',
                         amount: 3,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "goodFood",
+                        resourceName: 'goodFood',
                         amount: 3,
                     },
                     {
-                        resourceName: "organicWaste",
+                        resourceName: 'organicWaste',
                         amount: 1,
                     },
                 ],
@@ -2737,20 +2737,20 @@ export const buildings = {
     park: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["parks"],
-        buildingSound: "Generic placing",
-        workingSound: "Crowd LOOP",
+        requiredTech: ['parks'],
+        buildingSound: 'Generic placing',
+        workingSound: 'Crowd LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.25,
@@ -2764,9 +2764,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "parkPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'parkPoints',
             radius: 30,
             powerNeeded: 5,
             maxWorkers: 5,
@@ -2780,20 +2780,20 @@ export const buildings = {
     arena: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 50000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50000,
             },
         ],
-        requiredTech: ["culture"],
-        buildingSound: "Generic placing",
-        workingSound: "Crowd LOOP",
+        requiredTech: ['culture'],
+        buildingSound: 'Generic placing',
+        workingSound: 'Crowd LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -2807,9 +2807,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "culturePoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'culturePoints',
             radius: 75,
             powerNeeded: 20,
             maxWorkers: 20,
@@ -2823,20 +2823,20 @@ export const buildings = {
     school: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 20000,
             },
         ],
-        requiredTech: ["schools"],
-        buildingSound: "Generic placing",
-        workingSound: "Crowd LOOP",
+        requiredTech: ['schools'],
+        buildingSound: 'Generic placing',
+        workingSound: 'Crowd LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2.5,
@@ -2850,9 +2850,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "schoolPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'schoolPoints',
             radius: 30,
             powerNeeded: 5,
             maxWorkers: 5,
@@ -2866,14 +2866,14 @@ export const buildings = {
     habitatLevel1: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
         ],
-        buildingSound: "build habitat",
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2888,9 +2888,9 @@ export const buildings = {
         ],
         modelVariations: 3,
         productionLogic: {
-            type: "habitat",
+            type: 'habitat',
             habitatLevel: 1,
-            upgrade: "habitatLevel2",
+            upgrade: 'habitatLevel2',
             maxInhabitants: 10,
             powerNeededForTenPeople: 1,
         },
@@ -2899,23 +2899,23 @@ export const buildings = {
             y: 0,
             z: 1,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     habitatLevel2: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        buildingSound: "build habitat",
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -2930,10 +2930,10 @@ export const buildings = {
         ],
         modelVariations: 3,
         productionLogic: {
-            type: "habitat",
+            type: 'habitat',
             habitatLevel: 2,
-            upgrade: "habitatLevel3",
-            downgrade: "habitatLevel1",
+            upgrade: 'habitatLevel3',
+            downgrade: 'habitatLevel1',
             maxInhabitants: 12,
             powerNeededForTenPeople: 1,
         },
@@ -2942,23 +2942,23 @@ export const buildings = {
             y: 0,
             z: 1,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     habitatLevel3: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        buildingSound: "build habitat",
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.25,
@@ -2973,10 +2973,10 @@ export const buildings = {
         ],
         modelVariations: 3,
         productionLogic: {
-            type: "habitat",
+            type: 'habitat',
             habitatLevel: 3,
-            upgrade: "habitatLevel4",
-            downgrade: "habitatLevel2",
+            upgrade: 'habitatLevel4',
+            downgrade: 'habitatLevel2',
             maxInhabitants: 16,
             powerNeededForTenPeople: 2,
         },
@@ -2985,23 +2985,23 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     habitatLevel4: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        buildingSound: "build habitat",
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -3016,10 +3016,10 @@ export const buildings = {
         ],
         modelVariations: 6,
         productionLogic: {
-            type: "habitat",
+            type: 'habitat',
             habitatLevel: 4,
-            upgrade: "habitatLevel5",
-            downgrade: "habitatLevel3",
+            upgrade: 'habitatLevel5',
+            downgrade: 'habitatLevel3',
             maxInhabitants: 24,
             powerNeededForTenPeople: 2,
         },
@@ -3028,23 +3028,23 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     habitatLevel5: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        buildingSound: "build habitat",
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2.5,
@@ -3059,10 +3059,10 @@ export const buildings = {
         ],
         modelVariations: 6,
         productionLogic: {
-            type: "habitat",
+            type: 'habitat',
             habitatLevel: 5,
-            upgrade: "habitatLevel6",
-            downgrade: "habitatLevel4",
+            upgrade: 'habitatLevel6',
+            downgrade: 'habitatLevel4',
             maxInhabitants: 36,
             powerNeededForTenPeople: 3,
         },
@@ -3071,23 +3071,23 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     habitatLevel6: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        buildingSound: "build habitat",
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 6,
@@ -3102,9 +3102,9 @@ export const buildings = {
         ],
         modelVariations: 6,
         productionLogic: {
-            type: "habitat",
+            type: 'habitat',
             habitatLevel: 6,
-            downgrade: "habitatLevel5",
+            downgrade: 'habitatLevel5',
             maxInhabitants: 52,
             powerNeededForTenPeople: 3,
         },
@@ -3113,19 +3113,19 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["oxygen", "water"],
+        pipeResourceNames: ['oxygen', 'water'],
     },
     spacePort: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
         ],
-        buildingSound: "Generic placing",
+        buildingSound: 'Generic placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: -0.25,
@@ -3139,7 +3139,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "population",
+            type: 'population',
         },
         sideRoadOffset: {
             x: 0,
@@ -3150,20 +3150,20 @@ export const buildings = {
     spaceShipConstructionFacility: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 100000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50000,
             },
         ],
-        requiredTech: ["spaceshipConstruction"],
-        buildingSound: "Generic placing",
+        requiredTech: ['spaceshipConstruction'],
+        buildingSound: 'Generic placing',
         hasRoadConnection: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -3177,13 +3177,13 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
-            logicOverride: "spaceship",
+            type: 'factory',
+            logicOverride: 'spaceship',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "spaceshipModule",
+                        resourceName: 'spaceshipModule',
                         amount: 1,
                     },
                 ],
@@ -3192,11 +3192,11 @@ export const buildings = {
                 maxWorkers: 25,
             },
         },
-        pipeResourceNames: ["methane", "water", "oxygen", "crudeOil"],
+        pipeResourceNames: ['methane', 'water', 'oxygen', 'crudeOil'],
         netEdges: [
             {
-                type: "road",
-                name: "road_concrete_oneWay_threeLane",
+                type: 'road',
+                name: 'road_concrete_oneWay_threeLane',
                 startPos: {
                     x: 12,
                     y: 0.2,
@@ -3207,11 +3207,11 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_concrete_oneWay_threeLane",
+                type: 'road',
+                name: 'road_concrete_oneWay_threeLane',
                 startPos: {
                     x: 12,
                     y: 0.2,
@@ -3222,11 +3222,11 @@ export const buildings = {
                     y: 0.2,
                     z: 1,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_concrete_oneWay_threeLane",
+                type: 'road',
+                name: 'road_concrete_oneWay_threeLane',
                 startPos: {
                     x: -12,
                     y: 0.2,
@@ -3237,11 +3237,11 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_concrete_oneWay_threeLane",
+                type: 'road',
+                name: 'road_concrete_oneWay_threeLane',
                 startPos: {
                     x: -12,
                     y: 0.2,
@@ -3252,25 +3252,25 @@ export const buildings = {
                     y: 0.2,
                     z: 1,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     spacePortFTLPortal: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 150,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        buildingSound: "Generic placing",
+        buildingSound: 'Generic placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: -0.25,
@@ -3283,7 +3283,7 @@ export const buildings = {
                 },
             },
             {
-                type: "capsule",
+                type: 'capsule',
                 center: {
                     x: 0,
                     y: 2.22,
@@ -3294,7 +3294,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "goal",
+            type: 'goal',
         },
         sideRoadOffset: {
             x: 0,
@@ -3305,19 +3305,19 @@ export const buildings = {
     recyclingCenter: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["recycling"],
-        buildingSound: "Generic placing",
+        requiredTech: ['recycling'],
+        buildingSound: 'Generic placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -3332,7 +3332,7 @@ export const buildings = {
         ],
         upgradeEffect: {
             radius: 20,
-            upgradeType: "industrialWasteRecycling",
+            upgradeType: 'industrialWasteRecycling',
         },
         sideRoadOffset: {
             x: -0.3,
@@ -3343,19 +3343,19 @@ export const buildings = {
     soilEnrichmentFacility: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["fertilizer"],
-        buildingSound: "Generic placing",
+        requiredTech: ['fertilizer'],
+        buildingSound: 'Generic placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.25,
@@ -3370,7 +3370,7 @@ export const buildings = {
         ],
         upgradeEffect: {
             radius: 16,
-            upgradeType: "soilEnrichment",
+            upgradeType: 'soilEnrichment',
         },
         sideRoadOffset: {
             x: 0,
@@ -3381,18 +3381,18 @@ export const buildings = {
     powerPole: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
         ],
         doesAlwaysWork: true,
         doesAffectTerrain: false,
         hasRoadConnection: false,
-        buildingSystem: "power",
-        buildingSound: "pole placing",
+        buildingSystem: 'power',
+        buildingSound: 'pole placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -3405,29 +3405,29 @@ export const buildings = {
                 },
             },
         ],
-        placesBuildingConnector: "powerLine",
-        inBetweenObject: "powerPole",
+        placesBuildingConnector: 'powerLine',
+        inBetweenObject: 'powerPole',
         powerRadius: 15,
         buildingTiltRatio: 1,
     },
     powerSubstation: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["powerSubstation"],
-        buildingSystem: "power",
-        buildingSound: "Power Station Placed",
+        requiredTech: ['powerSubstation'],
+        buildingSystem: 'power',
+        buildingSound: 'Power Station Placed',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -3445,17 +3445,17 @@ export const buildings = {
     windTurbine: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
         ],
         hasRoadConnection: false,
-        buildingSystem: "power",
-        buildingSound: "Power Station Placed",
-        workingSound: "High voltage LOOP",
+        buildingSystem: 'power',
+        buildingSound: 'Power Station Placed',
+        workingSound: 'High voltage LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2.5,
@@ -3469,7 +3469,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [],
@@ -3484,22 +3484,22 @@ export const buildings = {
     solarPowerPlant: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 15000,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["solarPanels"],
-        buildingSystem: "power",
-        buildingSound: "Power Station Placed",
-        workingSound: "High voltage LOOP",
+        requiredTech: ['solarPanels'],
+        buildingSystem: 'power',
+        buildingSound: 'Power Station Placed',
+        workingSound: 'High voltage LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -3513,7 +3513,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [],
@@ -3535,22 +3535,22 @@ export const buildings = {
     solarPowerPlant_Variation: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 15000,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["solarPanels"],
-        buildingSystem: "power",
-        buildingSound: "Power Station Placed",
-        workingSound: "High voltage LOOP",
+        requiredTech: ['solarPanels'],
+        buildingSystem: 'power',
+        buildingSound: 'Power Station Placed',
+        workingSound: 'High voltage LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -3563,7 +3563,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -3576,7 +3576,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -3590,7 +3590,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [],
@@ -3612,21 +3612,21 @@ export const buildings = {
     nuclearPowerPlant: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 75000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50000,
             },
         ],
-        requiredTech: ["nuclearPower"],
-        buildingSystem: "power",
-        buildingSound: "Power Station Placed",
-        workingSound: "High voltage LOOP",
+        requiredTech: ['nuclearPower'],
+        buildingSystem: 'power',
+        buildingSound: 'Power Station Placed',
+        workingSound: 'High voltage LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -3640,15 +3640,15 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "uranium",
+                        resourceName: 'uranium',
                         amount: 10,
                     },
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 15,
                     },
                 ],
@@ -3707,26 +3707,26 @@ export const buildings = {
                 },
             ],
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     fastNeutronReactor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 200000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 125000,
             },
         ],
-        requiredTech: ["fastNeutronReactor"],
-        buildingSystem: "power",
-        buildingSound: "Power Station Placed",
-        workingSound: "High voltage LOOP",
+        requiredTech: ['fastNeutronReactor'],
+        buildingSystem: 'power',
+        buildingSound: 'Power Station Placed',
+        workingSound: 'High voltage LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 4,
@@ -3740,15 +3740,15 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "enrichedUranium",
+                        resourceName: 'enrichedUranium',
                         amount: 50,
                     },
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 25,
                     },
                 ],
@@ -3807,25 +3807,25 @@ export const buildings = {
                 },
             ],
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     waterAirFilter: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
         requiredTech: [],
-        buildingSound: "Water building placing",
-        workingSound: "Water buildings LOOP pump",
+        buildingSound: 'Water building placing',
+        workingSound: 'Water buildings LOOP pump',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -3839,12 +3839,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 1,
                     },
                 ],
@@ -3858,25 +3858,25 @@ export const buildings = {
             y: 0,
             z: 1.25,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     waterWellHydraulic: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 4000,
             },
         ],
-        requiredTech: ["groundWaterExtraction"],
-        buildingSound: "Water building placing",
-        workingSound: "Water buildings LOOP pump",
+        requiredTech: ['groundWaterExtraction'],
+        buildingSound: 'Water building placing',
+        workingSound: 'Water buildings LOOP pump',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -3890,12 +3890,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 5,
                     },
                 ],
@@ -3909,25 +3909,25 @@ export const buildings = {
             y: 0,
             z: 1.5,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     waterTank: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["tanks"],
-        buildingSound: "Water building placing",
+        requiredTech: ['tanks'],
+        buildingSound: 'Water building placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -3941,29 +3941,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "liquidTank",
-            resourceName: "water",
+            type: 'liquidTank',
+            resourceName: 'water',
             maxCapacity: 250,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     methaneDrill: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["methane"],
-        buildingSound: "Methane placing",
-        workingSound: "Methane LOOP",
+        requiredTech: ['methane'],
+        buildingSound: 'Methane placing',
+        workingSound: 'Methane LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -3977,19 +3977,19 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 1,
                     },
                 ],
                 timeSteps: 50000,
                 powerNeeded: 4,
                 maxWorkers: 2,
-                yieldResourceName: "MethaneCollider",
+                yieldResourceName: 'MethaneCollider',
                 hasResourceRotation: false,
             },
         },
@@ -3998,25 +3998,25 @@ export const buildings = {
             y: 0,
             z: 1.25,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     methaneFermentationPlant: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 7500,
             },
         ],
-        requiredTech: ["methaneFermentation"],
-        buildingSound: "Methane placing",
-        workingSound: "Methane LOOP",
+        requiredTech: ['methaneFermentation'],
+        buildingSound: 'Methane placing',
+        workingSound: 'Methane LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -4030,17 +4030,17 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "organicWaste",
+                        resourceName: 'organicWaste',
                         amount: 3,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 2,
                     },
                 ],
@@ -4054,26 +4054,26 @@ export const buildings = {
             y: 0,
             z: 1.25,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     methanePowerPlant: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
         ],
-        requiredTech: ["methanePowerPlants"],
-        buildingSystem: "power",
-        buildingSound: "Methane placing",
-        workingSound: "Methane LOOP",
+        requiredTech: ['methanePowerPlants'],
+        buildingSystem: 'power',
+        buildingSound: 'Methane placing',
+        workingSound: 'Methane LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -4087,11 +4087,11 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 10,
                     },
                 ],
@@ -4106,25 +4106,25 @@ export const buildings = {
             y: 0,
             z: 2.5,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     methaneTank: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["methane", "tanks"],
-        buildingSound: "Methane placing",
+        requiredTech: ['methane', 'tanks'],
+        buildingSound: 'Methane placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -4138,29 +4138,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "liquidTank",
-            resourceName: "methane",
+            type: 'liquidTank',
+            resourceName: 'methane',
             maxCapacity: 250,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     crudeOilTank: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["tanks"],
-        buildingSound: "Methane placing",
+        requiredTech: ['tanks'],
+        buildingSound: 'Methane placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -4174,29 +4174,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "liquidTank",
-            resourceName: "crudeOil",
+            type: 'liquidTank',
+            resourceName: 'crudeOil',
             maxCapacity: 250,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     waterDistillery: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["nanotubes"],
-        buildingSound: "Water building placing",
-        workingSound: "Water buildings LOOP pump",
+        requiredTech: ['nanotubes'],
+        buildingSound: 'Water building placing',
+        workingSound: 'Water buildings LOOP pump',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -4210,17 +4210,17 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "water",
+                        resourceName: 'water',
                         amount: 5,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "distilledWater",
+                        resourceName: 'distilledWater',
                         amount: 2,
                     },
                 ],
@@ -4234,25 +4234,25 @@ export const buildings = {
             y: 0,
             z: 2.25,
         },
-        pipeResourceNames: ["water"],
+        pipeResourceNames: ['water'],
     },
     oxygenTank: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
         hasRoadConnection: false,
-        requiredTech: ["tanks"],
-        buildingSound: "Methane placing",
+        requiredTech: ['tanks'],
+        buildingSound: 'Methane placing',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -4266,26 +4266,26 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "liquidTank",
-            resourceName: "oxygen",
+            type: 'liquidTank',
+            resourceName: 'oxygen',
             maxCapacity: 250,
         },
-        pipeResourceNames: ["oxygen"],
+        pipeResourceNames: ['oxygen'],
     },
     infiniteProducer: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50,
             },
         ],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: -0.25,
@@ -4298,7 +4298,7 @@ export const buildings = {
                 },
             },
             {
-                type: "capsule",
+                type: 'capsule',
                 center: {
                     x: 0,
                     y: 2.22,
@@ -4309,24 +4309,24 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "infinite",
-            producablesNames: ["car"],
+            type: 'infinite',
+            producablesNames: ['car'],
         },
     },
     infiniteConsumer: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50,
             },
         ],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: -0.25,
@@ -4339,7 +4339,7 @@ export const buildings = {
                 },
             },
             {
-                type: "capsule",
+                type: 'capsule',
                 center: {
                     x: 0,
                     y: 2.22,
@@ -4350,24 +4350,24 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "infinite",
-            consumablesNames: ["car"],
+            type: 'infinite',
+            consumablesNames: ['car'],
         },
     },
     signStanding: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -4384,7 +4384,7 @@ export const buildings = {
         continueBuilding: false,
         buildingTiltRatio: 1,
         textModule: {
-            scaffoldTemplate: "Buildings/signScaffoldStanding",
+            scaffoldTemplate: 'Buildings/signScaffoldStanding',
             letterOffset: {
                 x: 0,
                 y: 1,
@@ -4395,17 +4395,17 @@ export const buildings = {
     signLaying: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -4422,7 +4422,7 @@ export const buildings = {
         continueBuilding: false,
         buildingTiltRatio: 1,
         textModule: {
-            scaffoldTemplate: "Buildings/signScaffoldLaying",
+            scaffoldTemplate: 'Buildings/signScaffoldLaying',
             letterOffset: {
                 x: 0,
                 y: 0.92,
@@ -4433,22 +4433,22 @@ export const buildings = {
     monumentDrill_Stage0: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 150000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 350000,
             },
         ],
-        requiredTech: ["adamantineMining"],
-        localizationOverride: "monumentDrill",
+        requiredTech: ['adamantineMining'],
+        localizationOverride: 'monumentDrill',
         hasRoadConnection: false,
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 8,
@@ -4462,23 +4462,23 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "sensor",
+                    resourceName: 'sensor',
                     amount: 250,
                 },
                 {
-                    resourceName: "highTechTool",
+                    resourceName: 'highTechTool',
                     amount: 100,
                 },
             ],
-            nextLevelBuilding: "monumentDrill_Stage1",
+            nextLevelBuilding: 'monumentDrill_Stage1',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 24,
                     y: 0.2,
@@ -4489,11 +4489,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -24,
                     y: 0.2,
@@ -4504,11 +4504,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -2,
                     y: 0.2,
@@ -4519,11 +4519,11 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -4534,11 +4534,11 @@ export const buildings = {
                     y: 0.2,
                     z: 24,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 2,
                     y: 0.2,
@@ -4549,18 +4549,18 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     monumentDrill_Stage1: {
-        localizationOverride: "monumentDrill",
+        localizationOverride: 'monumentDrill',
         hasRoadConnection: false,
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 8,
@@ -4574,31 +4574,31 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "concrete",
+                    resourceName: 'concrete',
                     amount: 1000,
                 },
                 {
-                    resourceName: "steel",
+                    resourceName: 'steel',
                     amount: 1500,
                 },
                 {
-                    resourceName: "motor",
+                    resourceName: 'motor',
                     amount: 150,
                 },
                 {
-                    resourceName: "computer",
+                    resourceName: 'computer',
                     amount: 75,
                 },
             ],
-            nextLevelBuilding: "monumentDrill_Stage2",
+            nextLevelBuilding: 'monumentDrill_Stage2',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 24,
                     y: 0.2,
@@ -4609,11 +4609,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -24,
                     y: 0.2,
@@ -4624,11 +4624,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -2,
                     y: 0.2,
@@ -4639,11 +4639,11 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -4654,11 +4654,11 @@ export const buildings = {
                     y: 0.2,
                     z: 24,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 2,
                     y: 0.2,
@@ -4669,18 +4669,18 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     monumentDrill_Stage2: {
-        localizationOverride: "monumentDrill",
+        localizationOverride: 'monumentDrill',
         hasRoadConnection: false,
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 9,
@@ -4694,31 +4694,31 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "concrete",
+                    resourceName: 'concrete',
                     amount: 500,
                 },
                 {
-                    resourceName: "steel",
+                    resourceName: 'steel',
                     amount: 1500,
                 },
                 {
-                    resourceName: "neuralProcessor",
+                    resourceName: 'neuralProcessor',
                     amount: 75,
                 },
                 {
-                    resourceName: "radiationCore",
+                    resourceName: 'radiationCore',
                     amount: 125,
                 },
             ],
-            nextLevelBuilding: "monumentDrill_Stage3",
+            nextLevelBuilding: 'monumentDrill_Stage3',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 24,
                     y: 0.2,
@@ -4729,11 +4729,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -24,
                     y: 0.2,
@@ -4744,11 +4744,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -2,
                     y: 0.2,
@@ -4759,11 +4759,11 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -4774,11 +4774,11 @@ export const buildings = {
                     y: 0.2,
                     z: 24,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 2,
                     y: 0.2,
@@ -4789,18 +4789,18 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     monumentDrill_Stage3: {
-        localizationOverride: "monumentDrill",
+        localizationOverride: 'monumentDrill',
         hasRoadConnection: false,
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 9,
@@ -4814,31 +4814,31 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "concrete",
+                    resourceName: 'concrete',
                     amount: 500,
                 },
                 {
-                    resourceName: "steel",
+                    resourceName: 'steel',
                     amount: 1000,
                 },
                 {
-                    resourceName: "aiControlUnit",
+                    resourceName: 'aiControlUnit',
                     amount: 100,
                 },
                 {
-                    resourceName: "superconductor",
+                    resourceName: 'superconductor',
                     amount: 150,
                 },
             ],
-            nextLevelBuilding: "monumentDrill_Stage4",
+            nextLevelBuilding: 'monumentDrill_Stage4',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 24,
                     y: 0.2,
@@ -4849,11 +4849,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -24,
                     y: 0.2,
@@ -4864,11 +4864,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -2,
                     y: 0.2,
@@ -4879,11 +4879,11 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -4894,11 +4894,11 @@ export const buildings = {
                     y: 0.2,
                     z: 24,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 2,
                     y: 0.2,
@@ -4909,18 +4909,18 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     monumentDrill_Stage4: {
-        localizationOverride: "monumentDrill",
+        localizationOverride: 'monumentDrill',
         hasRoadConnection: false,
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 9,
@@ -4934,25 +4934,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sciencePack4",
+                        resourceName: 'sciencePack4',
                         amount: 4,
                     },
                     {
-                        resourceName: "superconductor",
+                        resourceName: 'superconductor',
                         amount: 16,
                     },
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 35,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "adamantine",
+                        resourceName: 'adamantine',
                         amount: 10,
                     },
                 ],
@@ -4961,11 +4961,11 @@ export const buildings = {
                 maxWorkers: 150,
             },
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 24,
                     y: 0.2,
@@ -4976,11 +4976,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -24,
                     y: 0.2,
@@ -4991,11 +4991,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -2,
                     y: 0.2,
@@ -5006,11 +5006,11 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -5021,11 +5021,11 @@ export const buildings = {
                     y: 0.2,
                     z: 24,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 2,
                     y: 0.2,
@@ -5036,27 +5036,27 @@ export const buildings = {
                     y: 0.2,
                     z: 18,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     trainstation_1R: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["trains"],
+        requiredTech: ['trains'],
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5069,7 +5069,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5082,11 +5082,11 @@ export const buildings = {
                 },
             },
         ],
-        stationModule: "train",
+        stationModule: 'train',
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5097,11 +5097,11 @@ export const buildings = {
                     y: 0.2,
                     z: -7,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5112,11 +5112,11 @@ export const buildings = {
                     y: 0.2,
                     z: -5,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -5,
                     y: 0.2,
@@ -5127,27 +5127,27 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
         ],
     },
     trainstation_2R: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 20000,
             },
         ],
-        requiredTech: ["trains"],
+        requiredTech: ['trains'],
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5160,7 +5160,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5173,7 +5173,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5186,11 +5186,11 @@ export const buildings = {
                 },
             },
         ],
-        stationModule: "train",
+        stationModule: 'train',
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -6,
                     y: 0.2,
@@ -5201,11 +5201,11 @@ export const buildings = {
                     y: 0.2,
                     z: 7,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5216,11 +5216,11 @@ export const buildings = {
                     y: 0.2,
                     z: 6,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5231,11 +5231,11 @@ export const buildings = {
                     y: 0.2,
                     z: 9,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 9,
                     y: 0.2,
@@ -5246,11 +5246,11 @@ export const buildings = {
                     y: 0.2,
                     z: 5,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -9,
                     y: 0.2,
@@ -5261,11 +5261,11 @@ export const buildings = {
                     y: 0.2,
                     z: -5,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5276,11 +5276,11 @@ export const buildings = {
                     y: 0.2,
                     z: -9,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5291,11 +5291,11 @@ export const buildings = {
                     y: 0.2,
                     z: -6,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 6,
                     y: 0.2,
@@ -5306,11 +5306,11 @@ export const buildings = {
                     y: 0.2,
                     z: -7,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -5321,11 +5321,11 @@ export const buildings = {
                     y: 0.2,
                     z: 1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -5336,27 +5336,27 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
         ],
     },
     trainstation_4R: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 40000,
             },
         ],
-        requiredTech: ["trains"],
+        requiredTech: ['trains'],
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5369,7 +5369,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5382,7 +5382,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5395,11 +5395,11 @@ export const buildings = {
                 },
             },
         ],
-        stationModule: "train",
+        stationModule: 'train',
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -6,
                     y: 0.2,
@@ -5410,11 +5410,11 @@ export const buildings = {
                     y: 0.2,
                     z: 9,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5425,11 +5425,11 @@ export const buildings = {
                     y: 0.2,
                     z: 8,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5440,11 +5440,11 @@ export const buildings = {
                     y: 0.2,
                     z: 11,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 9,
                     y: 0.2,
@@ -5455,11 +5455,11 @@ export const buildings = {
                     y: 0.2,
                     z: 7,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -9,
                     y: 0.2,
@@ -5470,11 +5470,11 @@ export const buildings = {
                     y: 0.2,
                     z: -7,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5485,11 +5485,11 @@ export const buildings = {
                     y: 0.2,
                     z: -11,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5500,11 +5500,11 @@ export const buildings = {
                     y: 0.2,
                     z: -8,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 6,
                     y: 0.2,
@@ -5515,11 +5515,11 @@ export const buildings = {
                     y: 0.2,
                     z: -9,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -5530,11 +5530,11 @@ export const buildings = {
                     y: 0.2,
                     z: 3,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -5545,11 +5545,11 @@ export const buildings = {
                     y: 0.2,
                     z: 1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -5560,11 +5560,11 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -5575,27 +5575,27 @@ export const buildings = {
                     y: 0.2,
                     z: -3,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
         ],
     },
     trainstation_6R: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 35000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 60000,
             },
         ],
-        requiredTech: ["trains"],
+        requiredTech: ['trains'],
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5608,7 +5608,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5621,7 +5621,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5634,11 +5634,11 @@ export const buildings = {
                 },
             },
         ],
-        stationModule: "train",
+        stationModule: 'train',
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -6,
                     y: 0.2,
@@ -5649,11 +5649,11 @@ export const buildings = {
                     y: 0.2,
                     z: 11,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5664,11 +5664,11 @@ export const buildings = {
                     y: 0.2,
                     z: 10,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5679,11 +5679,11 @@ export const buildings = {
                     y: 0.2,
                     z: 13,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 9,
                     y: 0.2,
@@ -5694,11 +5694,11 @@ export const buildings = {
                     y: 0.2,
                     z: 9,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -9,
                     y: 0.2,
@@ -5709,11 +5709,11 @@ export const buildings = {
                     y: 0.2,
                     z: -9,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5724,11 +5724,11 @@ export const buildings = {
                     y: 0.2,
                     z: -13,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5739,11 +5739,11 @@ export const buildings = {
                     y: 0.2,
                     z: -10,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 6,
                     y: 0.2,
@@ -5754,11 +5754,11 @@ export const buildings = {
                     y: 0.2,
                     z: -11,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -5769,11 +5769,11 @@ export const buildings = {
                     y: 0.2,
                     z: 5,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -5784,11 +5784,11 @@ export const buildings = {
                     y: 0.2,
                     z: 3,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -5799,11 +5799,11 @@ export const buildings = {
                     y: 0.2,
                     z: 1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -5814,11 +5814,11 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -5829,11 +5829,11 @@ export const buildings = {
                     y: 0.2,
                     z: -3,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -5844,27 +5844,27 @@ export const buildings = {
                     y: 0.2,
                     z: -5,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
         ],
     },
     trainstation_8R: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 50000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 75000,
             },
         ],
-        requiredTech: ["trains"],
+        requiredTech: ['trains'],
         hasRoadConnection: false,
-        buildingSound: "build misc",
+        buildingSound: 'build misc',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5877,7 +5877,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5890,7 +5890,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.25,
@@ -5903,11 +5903,11 @@ export const buildings = {
                 },
             },
         ],
-        stationModule: "train",
+        stationModule: 'train',
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -6,
                     y: 0.2,
@@ -5918,11 +5918,11 @@ export const buildings = {
                     y: 0.2,
                     z: 13,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5933,11 +5933,11 @@ export const buildings = {
                     y: 0.2,
                     z: 12,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -5948,11 +5948,11 @@ export const buildings = {
                     y: 0.2,
                     z: 15,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 9,
                     y: 0.2,
@@ -5963,11 +5963,11 @@ export const buildings = {
                     y: 0.2,
                     z: 11,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -9,
                     y: 0.2,
@@ -5978,11 +5978,11 @@ export const buildings = {
                     y: 0.2,
                     z: -11,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -1,
                     y: 0.2,
@@ -5993,11 +5993,11 @@ export const buildings = {
                     y: 0.2,
                     z: -15,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 1,
                     y: 0.2,
@@ -6008,11 +6008,11 @@ export const buildings = {
                     y: 0.2,
                     z: -12,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 6,
                     y: 0.2,
@@ -6023,11 +6023,11 @@ export const buildings = {
                     y: 0.2,
                     z: -13,
                 },
-                trafficType: "outgoing",
+                trafficType: 'outgoing',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -6038,11 +6038,11 @@ export const buildings = {
                     y: 0.2,
                     z: 7,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -6053,11 +6053,11 @@ export const buildings = {
                     y: 0.2,
                     z: 5,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -6068,11 +6068,11 @@ export const buildings = {
                     y: 0.2,
                     z: 3,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: 13,
                     y: 0.2,
@@ -6083,11 +6083,11 @@ export const buildings = {
                     y: 0.2,
                     z: 1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -6098,11 +6098,11 @@ export const buildings = {
                     y: 0.2,
                     z: -1,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -6113,11 +6113,11 @@ export const buildings = {
                     y: 0.2,
                     z: -3,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -6128,11 +6128,11 @@ export const buildings = {
                     y: 0.2,
                     z: -5,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
             {
-                type: "rail",
-                name: "rail_oneWay",
+                type: 'rail',
+                name: 'rail_oneWay',
                 startPos: {
                     x: -13,
                     y: 0.2,
@@ -6143,29 +6143,29 @@ export const buildings = {
                     y: 0.2,
                     z: -7,
                 },
-                trafficType: "through",
+                trafficType: 'through',
             },
         ],
     },
     targetingStation: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
         ],
         hasRoadConnection: true,
         requiredTech: [],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming Loop",
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming Loop',
         continueBuilding: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -6178,7 +6178,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 1.5,
                     y: 5,
@@ -6192,7 +6192,7 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "laser",
+            type: 'laser',
             maxWorkers: 0,
         },
         sideRoadOffset: {
@@ -6204,24 +6204,24 @@ export const buildings = {
     filteringMeshFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 15000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 500,
             },
         ],
-        requiredTech: ["terraforming"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['terraforming'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -6235,21 +6235,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "heatExchanger",
+                        resourceName: 'heatExchanger',
                         amount: 2,
                     },
                     {
-                        resourceName: "neuralProcessor",
+                        resourceName: 'neuralProcessor',
                         amount: 1,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "filteringMesh",
+                        resourceName: 'filteringMesh',
                         amount: 4,
                     },
                 ],
@@ -6267,24 +6267,24 @@ export const buildings = {
     advancedFilteringMeshFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 40000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 1500,
             },
         ],
-        requiredTech: ["groundAcidityRegulation"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['groundAcidityRegulation'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -6298,25 +6298,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "sciencePack2",
+                        resourceName: 'sciencePack2',
                         amount: 2,
                     },
                     {
-                        resourceName: "aiControlUnit",
+                        resourceName: 'aiControlUnit',
                         amount: 2,
                     },
                     {
-                        resourceName: "filteringMesh",
+                        resourceName: 'filteringMesh',
                         amount: 6,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "advancedFilteringMesh",
+                        resourceName: 'advancedFilteringMesh',
                         amount: 2,
                     },
                 ],
@@ -6334,24 +6334,24 @@ export const buildings = {
     superconductingCoilFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 30000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 2500,
             },
         ],
-        requiredTech: ["magneticFieldGeneration"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['magneticFieldGeneration'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -6365,21 +6365,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "superconductor",
+                        resourceName: 'superconductor',
                         amount: 2,
                     },
                     {
-                        resourceName: "radiationCore",
+                        resourceName: 'radiationCore',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "superconductingCoil",
+                        resourceName: 'superconductingCoil',
                         amount: 1,
                     },
                 ],
@@ -6397,24 +6397,24 @@ export const buildings = {
     dustParticleFilter: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 500,
             },
         ],
-        requiredTech: ["terraforming"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['terraforming'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -6428,14 +6428,14 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
-            logicOverride: "terraformer",
-            terraformType: "dustParticleFiltering",
+            type: 'factory',
+            logicOverride: 'terraformer',
+            terraformType: 'dustParticleFiltering',
             terraformRadius: 75,
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "filteringMesh",
+                        resourceName: 'filteringMesh',
                         amount: 2,
                     },
                 ],
@@ -6454,24 +6454,24 @@ export const buildings = {
     fertilizerDroneHub: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 1000,
             },
         ],
-        requiredTech: ["droneFertilization"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['droneFertilization'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -6485,14 +6485,14 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
-            logicOverride: "terraformer",
-            terraformType: "fertilization",
+            type: 'factory',
+            logicOverride: 'terraformer',
+            terraformType: 'fertilization',
             terraformRadius: 150,
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "fertilizer",
+                        resourceName: 'fertilizer',
                         amount: 8,
                     },
                 ],
@@ -6511,24 +6511,24 @@ export const buildings = {
     groundAcidityRegulator: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 50000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 2500,
             },
         ],
-        requiredTech: ["groundAcidityRegulation"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['groundAcidityRegulation'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -6542,14 +6542,14 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
-            logicOverride: "terraformer",
-            terraformType: "groundAcidity",
+            type: 'factory',
+            logicOverride: 'terraformer',
+            terraformType: 'groundAcidity',
             terraformRadius: 250,
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "advancedFilteringMesh",
+                        resourceName: 'advancedFilteringMesh',
                         amount: 1,
                     },
                 ],
@@ -6568,24 +6568,24 @@ export const buildings = {
     ammoniaExtractor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 100000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 150000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 5000,
             },
         ],
-        requiredTech: ["ammoniaExtraction"],
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        requiredTech: ['ammoniaExtraction'],
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0,
@@ -6599,14 +6599,14 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
-            logicOverride: "terraformer",
-            terraformType: "ammoniaExtraction",
+            type: 'factory',
+            logicOverride: 'terraformer',
+            terraformType: 'ammoniaExtraction',
             terraformRadius: 400,
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "advancedFilteringMesh",
+                        resourceName: 'advancedFilteringMesh',
                         amount: 3,
                     },
                 ],
@@ -6625,26 +6625,26 @@ export const buildings = {
     magneticFieldGenerator_Stage0: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 350000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 150000,
             },
             {
-                resourceName: "adamantine",
+                resourceName: 'adamantine',
                 amount: 25000,
             },
         ],
-        requiredTech: ["magneticFieldGeneration"],
+        requiredTech: ['magneticFieldGeneration'],
         hasRoadConnection: false,
-        localizationOverride: "magneticFieldGenerator",
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        localizationOverride: 'magneticFieldGenerator',
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -6658,23 +6658,23 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "filteringMesh",
+                    resourceName: 'filteringMesh',
                     amount: 200,
                 },
                 {
-                    resourceName: "highTechTool",
+                    resourceName: 'highTechTool',
                     amount: 150,
                 },
             ],
-            nextLevelBuilding: "magneticFieldGenerator_Stage1",
+            nextLevelBuilding: 'magneticFieldGenerator_Stage1',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 14,
                     y: 0.2,
@@ -6685,11 +6685,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -6700,11 +6700,11 @@ export const buildings = {
                     y: 0.2,
                     z: 12,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -14,
                     y: 0.2,
@@ -6715,18 +6715,18 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     magneticFieldGenerator_Stage1: {
-        localizationOverride: "magneticFieldGenerator",
+        localizationOverride: 'magneticFieldGenerator',
         hasRoadConnection: false,
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -6740,31 +6740,31 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "concrete",
+                    resourceName: 'concrete',
                     amount: 1500,
                 },
                 {
-                    resourceName: "steel",
+                    resourceName: 'steel',
                     amount: 1000,
                 },
                 {
-                    resourceName: "advancedFilteringMesh",
+                    resourceName: 'advancedFilteringMesh',
                     amount: 75,
                 },
                 {
-                    resourceName: "computer",
+                    resourceName: 'computer',
                     amount: 100,
                 },
             ],
-            nextLevelBuilding: "magneticFieldGenerator_Stage2",
+            nextLevelBuilding: 'magneticFieldGenerator_Stage2',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 14,
                     y: 0.2,
@@ -6775,11 +6775,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -6790,11 +6790,11 @@ export const buildings = {
                     y: 0.2,
                     z: 12,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -14,
                     y: 0.2,
@@ -6805,18 +6805,18 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     magneticFieldGenerator_Stage2: {
-        localizationOverride: "magneticFieldGenerator",
+        localizationOverride: 'magneticFieldGenerator',
         hasRoadConnection: false,
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -6830,31 +6830,31 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "concrete",
+                    resourceName: 'concrete',
                     amount: 1500,
                 },
                 {
-                    resourceName: "steel",
+                    resourceName: 'steel',
                     amount: 500,
                 },
                 {
-                    resourceName: "superconductor",
+                    resourceName: 'superconductor',
                     amount: 125,
                 },
                 {
-                    resourceName: "radiationCore",
+                    resourceName: 'radiationCore',
                     amount: 125,
                 },
             ],
-            nextLevelBuilding: "magneticFieldGenerator_Stage3",
+            nextLevelBuilding: 'magneticFieldGenerator_Stage3',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 14,
                     y: 0.2,
@@ -6865,11 +6865,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -6880,11 +6880,11 @@ export const buildings = {
                     y: 0.2,
                     z: 12,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -14,
                     y: 0.2,
@@ -6895,18 +6895,18 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     magneticFieldGenerator_Stage3: {
-        localizationOverride: "magneticFieldGenerator",
+        localizationOverride: 'magneticFieldGenerator',
         hasRoadConnection: false,
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -6920,31 +6920,31 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "upgrade",
+            type: 'upgrade',
             costs: [
                 {
-                    resourceName: "concrete",
+                    resourceName: 'concrete',
                     amount: 1000,
                 },
                 {
-                    resourceName: "steel",
+                    resourceName: 'steel',
                     amount: 500,
                 },
                 {
-                    resourceName: "aiControlUnit",
+                    resourceName: 'aiControlUnit',
                     amount: 150,
                 },
                 {
-                    resourceName: "superconductingCoil",
+                    resourceName: 'superconductingCoil',
                     amount: 100,
                 },
             ],
-            nextLevelBuilding: "magneticFieldGenerator_Stage4",
+            nextLevelBuilding: 'magneticFieldGenerator_Stage4',
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 14,
                     y: 0.2,
@@ -6955,11 +6955,11 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -6970,11 +6970,11 @@ export const buildings = {
                     y: 0.2,
                     z: 12,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: -14,
                     y: 0.2,
@@ -6985,18 +6985,18 @@ export const buildings = {
                     y: 0.2,
                     z: 0,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     magneticFieldGenerator_Stage4: {
-        localizationOverride: "magneticFieldGenerator",
+        localizationOverride: 'magneticFieldGenerator',
         hasRoadConnection: false,
-        buildingSound: "Terraforming building placing",
-        workingSound: "Terraforming loop",
+        buildingSound: 'Terraforming building placing',
+        workingSound: 'Terraforming loop',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -7010,18 +7010,18 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
-            logicOverride: "terraformer",
+            type: 'factory',
+            logicOverride: 'terraformer',
             terraformRadius: 4096,
-            terraformType: "magneticField",
+            terraformType: 'magneticField',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "superconductingCoil",
+                        resourceName: 'superconductingCoil',
                         amount: 10,
                     },
                     {
-                        resourceName: "sciencePack4",
+                        resourceName: 'sciencePack4',
                         amount: 2,
                     },
                 ],
@@ -7033,8 +7033,8 @@ export const buildings = {
         },
         netEdges: [
             {
-                type: "road",
-                name: "road_superhighway_oneWay_threeLane",
+                type: 'road',
+                name: 'road_superhighway_oneWay_threeLane',
                 startPos: {
                     x: 0,
                     y: 0.2,
@@ -7045,22 +7045,22 @@ export const buildings = {
                     y: 0.2,
                     z: 2,
                 },
-                trafficType: "incoming",
+                trafficType: 'incoming',
             },
         ],
     },
     crudeOilExtractor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
         ],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -7074,12 +7074,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 1,
                     },
                 ],
@@ -7093,21 +7093,21 @@ export const buildings = {
             y: 0,
             z: 1,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     largeCrudeOilExtractor: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
         ],
-        requiredTech: ["largeMines"],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        requiredTech: ['largeMines'],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -7121,12 +7121,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 2,
                     },
                 ],
@@ -7140,24 +7140,24 @@ export const buildings = {
             y: 0,
             z: 1,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     chemicalsLab: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        requiredTech: ["science2"],
-        buildingSound: "build science",
+        requiredTech: ['science2'],
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -7171,12 +7171,12 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [],
                 producables: [
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 2,
                     },
                 ],
@@ -7194,19 +7194,19 @@ export const buildings = {
     industrialChemicalsLab: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 4000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["nanotubes"],
-        buildingSound: "build science",
+        requiredTech: ['nanotubes'],
+        buildingSound: 'build science',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -7220,25 +7220,25 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "distilledWater",
+                        resourceName: 'distilledWater',
                         amount: 2,
                     },
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 4,
                     },
                     {
-                        resourceName: "methane",
+                        resourceName: 'methane',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "industrialChemicals",
+                        resourceName: 'industrialChemicals',
                         amount: 2,
                     },
                 ],
@@ -7252,25 +7252,25 @@ export const buildings = {
             y: 0,
             z: 0.5,
         },
-        pipeResourceNames: ["methane"],
+        pipeResourceNames: ['methane'],
     },
     stemCellLab: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 100,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 200,
             },
         ],
-        requiredTech: ["foodProcessing"],
-        buildingSound: "build mine",
-        workingSound: "mineWorking",
+        requiredTech: ['foodProcessing'],
+        buildingSound: 'build mine',
+        workingSound: 'mineWorking',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.75,
@@ -7284,21 +7284,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "oxygen",
+                        resourceName: 'oxygen',
                         amount: 2,
                     },
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "stemCell",
+                        resourceName: 'stemCell',
                         amount: 2,
                     },
                 ],
@@ -7312,25 +7312,25 @@ export const buildings = {
             y: 0,
             z: 0.75,
         },
-        pipeResourceNames: ["oxygen"],
+        pipeResourceNames: ['oxygen'],
     },
     copperMill: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2000,
             },
         ],
-        requiredTech: ["motors"],
-        buildingSound: "build production",
-        workingSound: "buildings_Concrete_Factory",
+        requiredTech: ['motors'],
+        buildingSound: 'build production',
+        workingSound: 'buildings_Concrete_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -7344,21 +7344,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "copperOre",
+                        resourceName: 'copperOre',
                         amount: 2,
                     },
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "copperBar",
+                        resourceName: 'copperBar',
                         amount: 2,
                     },
                 ],
@@ -7376,20 +7376,20 @@ export const buildings = {
     plasticFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 1500,
             },
         ],
-        requiredTech: ["electronics"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['electronics'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -7403,17 +7403,17 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 2,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "plastic",
+                        resourceName: 'plastic',
                         amount: 2,
                     },
                 ],
@@ -7427,25 +7427,25 @@ export const buildings = {
             y: 0,
             z: 0.25,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     sensorFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 7500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["neuralProcessors"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['neuralProcessors'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -7459,21 +7459,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "plastic",
+                        resourceName: 'plastic',
                         amount: 4,
                     },
                     {
-                        resourceName: "aluminium",
+                        resourceName: 'aluminium',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "sensor",
+                        resourceName: 'sensor',
                         amount: 6,
                     },
                 ],
@@ -7491,20 +7491,20 @@ export const buildings = {
     heatExchangerFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 7500,
             },
         ],
-        requiredTech: ["heatExchanger"],
-        buildingSound: "build refinement",
-        workingSound: "buildings_Electronics_Factory",
+        requiredTech: ['heatExchanger'],
+        buildingSound: 'build refinement',
+        workingSound: 'buildings_Electronics_Factory',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -7518,29 +7518,29 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "copperBar",
+                        resourceName: 'copperBar',
                         amount: 2,
                     },
                     {
-                        resourceName: "steel",
+                        resourceName: 'steel',
                         amount: 5,
                     },
                     {
-                        resourceName: "industrialChemicals",
+                        resourceName: 'industrialChemicals',
                         amount: 2,
                     },
                     {
-                        resourceName: "crudeOil",
+                        resourceName: 'crudeOil',
                         amount: 4,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "heatExchanger",
+                        resourceName: 'heatExchanger',
                         amount: 4,
                     },
                 ],
@@ -7554,25 +7554,25 @@ export const buildings = {
             y: 0,
             z: 1,
         },
-        pipeResourceNames: ["crudeOil"],
+        pipeResourceNames: ['crudeOil'],
     },
     enrichedUraniumFactory: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 20000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 15000,
             },
         ],
-        requiredTech: ["uraniumMining"],
-        buildingSound: "Methane placing",
-        workingSound: "Methane LOOP",
+        requiredTech: ['uraniumMining'],
+        buildingSound: 'Methane placing',
+        workingSound: 'Methane LOOP',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -7586,21 +7586,21 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "factory",
+            type: 'factory',
             productionDefinition: {
                 consumables: [
                     {
-                        resourceName: "uranium",
+                        resourceName: 'uranium',
                         amount: 4,
                     },
                     {
-                        resourceName: "chemicals",
+                        resourceName: 'chemicals',
                         amount: 8,
                     },
                 ],
                 producables: [
                     {
-                        resourceName: "enrichedUranium",
+                        resourceName: 'enrichedUranium',
                         amount: 5,
                     },
                 ],
@@ -7618,20 +7618,20 @@ export const buildings = {
     pixelBuildingCorner: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        requiredTech: ["pixelBuilding"],
-        buildingSound: "build habitat",
+        requiredTech: ['pixelBuilding'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -0.34,
                     y: 0.6,
@@ -7644,7 +7644,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -0.66,
                     y: 0.6,
@@ -7657,7 +7657,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.5,
                     y: 0.6,
@@ -7670,7 +7670,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -0.83,
                     y: 0.6,
@@ -7683,7 +7683,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -0.16,
                     y: 0.6,
@@ -7698,26 +7698,26 @@ export const buildings = {
         ],
         hasRoadConnection: false,
         productionLogic: {
-            type: "pixel",
+            type: 'pixel',
         },
     },
     pixelBuildingInvertCorner: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        requiredTech: ["pixelBuilding"],
-        buildingSound: "build habitat",
+        requiredTech: ['pixelBuilding'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.92,
                     y: 0.6,
@@ -7730,7 +7730,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.36,
                     y: 0.6,
@@ -7743,7 +7743,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.8,
                     y: 0.6,
@@ -7756,7 +7756,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.51,
                     y: 0.6,
@@ -7769,7 +7769,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.6,
                     y: 0.6,
@@ -7784,26 +7784,26 @@ export const buildings = {
         ],
         hasRoadConnection: false,
         productionLogic: {
-            type: "pixel",
+            type: 'pixel',
         },
     },
     pixelBuildingRound: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        requiredTech: ["pixelBuilding"],
-        buildingSound: "build habitat",
+        requiredTech: ['pixelBuilding'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.6,
@@ -7818,26 +7818,26 @@ export const buildings = {
         ],
         hasRoadConnection: false,
         productionLogic: {
-            type: "pixel",
+            type: 'pixel',
         },
     },
     pixelBuildingRoundCorner: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        requiredTech: ["pixelBuilding"],
-        buildingSound: "build habitat",
+        requiredTech: ['pixelBuilding'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -0.31,
                     y: 0.6,
@@ -7850,7 +7850,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -0.5,
                     y: 0.6,
@@ -7863,7 +7863,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.42,
                     y: 0.6,
@@ -7878,26 +7878,26 @@ export const buildings = {
         ],
         hasRoadConnection: false,
         productionLogic: {
-            type: "pixel",
+            type: 'pixel',
         },
     },
     pixelBuildingSquare: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 500,
             },
         ],
-        requiredTech: ["pixelBuilding"],
-        buildingSound: "build habitat",
+        requiredTech: ['pixelBuilding'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.6,
@@ -7912,25 +7912,25 @@ export const buildings = {
         ],
         hasRoadConnection: false,
         productionLogic: {
-            type: "pixel",
+            type: 'pixel',
         },
     },
     crashedUfo: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
         ],
-        requiredTech: ["sightSeeing2"],
-        buildingSound: "build habitat",
+        requiredTech: ['sightSeeing2'],
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -7948,19 +7948,19 @@ export const buildings = {
     decorativePark1: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 7500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 3500,
             },
         ],
-        requiredTech: ["parks"],
-        buildingSound: "build habitat",
+        requiredTech: ['parks'],
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -7974,9 +7974,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "parkPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'parkPoints',
             radius: 20,
             powerNeeded: 3,
             maxWorkers: 3,
@@ -7991,19 +7991,19 @@ export const buildings = {
     decorativePark2: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 7500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 3500,
             },
         ],
-        requiredTech: ["parks"],
-        buildingSound: "build habitat",
+        requiredTech: ['parks'],
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1.5,
@@ -8017,9 +8017,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "parkPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'parkPoints',
             radius: 20,
             powerNeeded: 3,
             maxWorkers: 3,
@@ -8034,16 +8034,16 @@ export const buildings = {
     fence1: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
         ],
-        requiredTech: ["fence"],
-        buildingSound: "build habitat",
+        requiredTech: ['fence'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.8,
                     y: 0.5,
@@ -8061,16 +8061,16 @@ export const buildings = {
     fence2: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
         ],
-        requiredTech: ["fence"],
-        buildingSound: "build habitat",
+        requiredTech: ['fence'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.88,
                     y: 0.77,
@@ -8083,7 +8083,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.88,
                     y: 0.4,
@@ -8096,7 +8096,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.88,
                     y: 0.4,
@@ -8114,16 +8114,16 @@ export const buildings = {
     fence3: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 1000,
             },
         ],
-        requiredTech: ["fence"],
-        buildingSound: "build habitat",
+        requiredTech: ['fence'],
+        buildingSound: 'build habitat',
         shrinkColliders: false,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0.84,
                     y: 0.5,
@@ -8141,16 +8141,16 @@ export const buildings = {
     panoramicWheel: {
         costs: [
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50000,
             },
         ],
-        requiredTech: ["sightSeeing1"],
-        buildingSound: "build habitat",
+        requiredTech: ['sightSeeing1'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 6.4,
@@ -8168,16 +8168,16 @@ export const buildings = {
     parkingLot1: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 15000,
             },
         ],
-        requiredTech: ["sightSeeing1"],
-        buildingSound: "build habitat",
+        requiredTech: ['sightSeeing1'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 2,
                     y: 0,
@@ -8190,7 +8190,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: -6,
                     y: 1,
@@ -8208,16 +8208,16 @@ export const buildings = {
     eiffelTower: {
         costs: [
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 50000,
             },
         ],
-        requiredTech: ["sightSeeing1"],
-        buildingSound: "build habitat",
+        requiredTech: ['sightSeeing1'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -8230,7 +8230,7 @@ export const buildings = {
                 },
             },
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 9,
@@ -8248,20 +8248,20 @@ export const buildings = {
     statue1: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["statue"],
-        buildingSound: "build habitat",
+        requiredTech: ['statue'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -8279,20 +8279,20 @@ export const buildings = {
     statue2: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["statue"],
-        buildingSound: "build habitat",
+        requiredTech: ['statue'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2.5,
@@ -8310,20 +8310,20 @@ export const buildings = {
     statue3: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 10000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 10000,
             },
         ],
-        requiredTech: ["statue"],
-        buildingSound: "build habitat",
+        requiredTech: ['statue'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -8341,20 +8341,20 @@ export const buildings = {
     ffEasterEgg: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["statue"],
-        buildingSound: "build habitat",
+        requiredTech: ['statue'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -8372,20 +8372,20 @@ export const buildings = {
     decorativePark3: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["parks"],
-        buildingSound: "build habitat",
+        requiredTech: ['parks'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -8399,9 +8399,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "parkPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'parkPoints',
             radius: 14,
             powerNeeded: 2,
             maxWorkers: 2,
@@ -8416,20 +8416,20 @@ export const buildings = {
     decorativePark4: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 5000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 5000,
             },
         ],
-        requiredTech: ["parks"],
-        buildingSound: "build habitat",
+        requiredTech: ['parks'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 1,
@@ -8443,9 +8443,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "parkPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'parkPoints',
             radius: 14,
             powerNeeded: 2,
             maxWorkers: 2,
@@ -8460,20 +8460,20 @@ export const buildings = {
     decorativePark5: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 2500,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 2500,
             },
         ],
-        requiredTech: ["parks"],
-        buildingSound: "build habitat",
+        requiredTech: ['parks'],
+        buildingSound: 'build habitat',
         shrinkColliders: true,
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 0.5,
@@ -8487,9 +8487,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "parkPoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'parkPoints',
             radius: 8,
             powerNeeded: 1,
             maxWorkers: 1,
@@ -8504,19 +8504,19 @@ export const buildings = {
     pyramid: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
         ],
-        requiredTech: ["sightSeeing2"],
-        buildingSound: "build habitat",
+        requiredTech: ['sightSeeing2'],
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 3,
@@ -8534,19 +8534,19 @@ export const buildings = {
     holoCinema: {
         costs: [
             {
-                resourceName: "concrete",
+                resourceName: 'concrete',
                 amount: 25000,
             },
             {
-                resourceName: "steel",
+                resourceName: 'steel',
                 amount: 25000,
             },
         ],
-        requiredTech: ["culture"],
-        buildingSound: "build habitat",
+        requiredTech: ['culture'],
+        buildingSound: 'build habitat',
         colliders: [
             {
-                type: "box",
+                type: 'box',
                 center: {
                     x: 0,
                     y: 2,
@@ -8560,9 +8560,9 @@ export const buildings = {
             },
         ],
         productionLogic: {
-            type: "areaOfEffect",
-            upgradeName: "fulfillNeed",
-            resourceName: "culturePoints",
+            type: 'areaOfEffect',
+            upgradeName: 'fulfillNeed',
+            resourceName: 'culturePoints',
             radius: 50,
             powerNeeded: 30,
             maxWorkers: 10,

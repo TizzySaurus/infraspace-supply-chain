@@ -1,9 +1,9 @@
 import { Injectable } from '@morgan-stanley/needle';
 import { filter } from 'rxjs';
 
-import { FactoryTotals, Material, ParsedBuilding } from "../../constants";
-import { EfficiencyHelper, getFactories, getRate } from "../../helpers";
-import { objectKeysOf } from "../../types/utils";
+import { FactoryTotals, Material, ParsedBuilding } from '../../constants';
+import { EfficiencyHelper, getFactories, getRate } from '../../helpers';
+import { objectKeysOf } from '../../types/utils';
 
 @Injectable()
 export class MaterialProductionModelFactory {
@@ -28,7 +28,7 @@ export class MaterialProductionModel<T extends Material = Material> {
         this.updateProductionRate();
 
         helper.efficiencyUpdates
-            .pipe(filter(factory => factory === this.selectedFactory))
+            .pipe(filter((factory) => factory === this.selectedFactory))
             .subscribe(() => this.updateRequiredFactoryCount());
     }
 
@@ -97,7 +97,7 @@ export class MaterialProductionModel<T extends Material = Material> {
             this.selectedFactory = factory;
         }
 
-        this._children.forEach(child => child.hierarchicalFactorySelection(factory));
+        this._children.forEach((child) => child.hierarchicalFactorySelection(factory));
     }
 
     private _children: MaterialProductionModel[] = [];
@@ -119,13 +119,8 @@ export class MaterialProductionModel<T extends Material = Material> {
     public getTotals(): FactoryTotals {
         const totals = new Map<ParsedBuilding, Partial<Record<Material, number>>>();
 
-        this.children.forEach(child => {
-            this.addTotal(
-                totals,
-                child.selectedFactory,
-                child.material,
-                this.getRequiredComponentRate(child.material)
-            );
+        this.children.forEach((child) => {
+            this.addTotal(totals, child.selectedFactory, child.material, this.getRequiredComponentRate(child.material));
 
             this.addChildTotals(totals, child);
         });
@@ -136,28 +131,18 @@ export class MaterialProductionModel<T extends Material = Material> {
     private addChildTotals(totals: FactoryTotals, child: MaterialProductionModel) {
         const childTotals = child.getTotals();
 
-        Array.from(childTotals.keys()).forEach(childFactory => {
+        Array.from(childTotals.keys()).forEach((childFactory) => {
             const childFactoryTotals = childTotals.get(childFactory) ?? {};
 
             const childTotalMaterials = Object.keys(childFactoryTotals) as Material[];
 
-            childTotalMaterials.forEach(childMaterial =>
-                this.addTotal(
-                    totals,
-                    childFactory,
-                    childMaterial,
-                    childFactoryTotals[childMaterial] ?? 0
-                )
+            childTotalMaterials.forEach((childMaterial) =>
+                this.addTotal(totals, childFactory, childMaterial, childFactoryTotals[childMaterial] ?? 0)
             );
         });
     }
 
-    private addTotal(
-        totals: FactoryTotals,
-        factory: ParsedBuilding,
-        material: Material,
-        rate: number
-    ) {
+    private addTotal(totals: FactoryTotals, factory: ParsedBuilding, material: Material, rate: number) {
         let factoryTotals = totals.get(factory);
 
         if (factoryTotals == null) {
@@ -173,9 +158,7 @@ export class MaterialProductionModel<T extends Material = Material> {
     private updateProductionRate() {
         this._productionRate = this.calculateRate(this._factoryCount);
 
-        this.children.forEach(
-            child => (child.requiredRate = this.getRequiredComponentRate(child.material))
-        );
+        this.children.forEach((child) => (child.requiredRate = this.getRequiredComponentRate(child.material)));
     }
 
     private updateRequiredFactoryCount() {
@@ -203,6 +186,6 @@ export class MaterialProductionModel<T extends Material = Material> {
 
         this._children = objectKeysOf(input)
             // .filter(material => material != "power")
-            .map(component => this.childFactory.create(component, this.depth + 1));
+            .map((component) => this.childFactory.create(component, this.depth + 1));
     }
 }

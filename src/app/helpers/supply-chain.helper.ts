@@ -1,8 +1,6 @@
-import { factoryLookup, Material, ParsedBuilding } from "../constants";
+import { factoryLookup, Material, ParsedBuilding } from '../constants';
 
-export function getFactories<T extends Material>(
-    material: T
-): [ParsedBuilding, ...ParsedBuilding[]] {
+export function getFactories<T extends Material>(material: T): [ParsedBuilding, ...ParsedBuilding[]] {
     return factoryLookup[material] as [ParsedBuilding, ...ParsedBuilding[]];
 }
 

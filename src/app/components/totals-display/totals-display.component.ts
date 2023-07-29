@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
 
-import { FactoryTotals, Material, ParsedBuilding } from "../../constants";
-import { getRate } from "../../helpers";
+import { FactoryTotals, Material, ParsedBuilding } from '../../constants';
+import { getRate } from '../../helpers';
 
 type BuildCosts = Partial<Record<Material, number>>;
 
 @Component({
-    selector: "totals-display",
-    templateUrl: "./totals-display.component.html",
-    styleUrls: ["./totals-display.component.scss"],
+    selector: 'totals-display',
+    templateUrl: './totals-display.component.html',
+    styleUrls: ['./totals-display.component.scss'],
 })
 export class TotalsDisplayComponent {
     private _factoriesMap: Map<ParsedBuilding, number> = new Map();
@@ -46,9 +46,7 @@ export class TotalsDisplayComponent {
     }
 
     public get factories(): ParsedBuilding[] {
-        return Array.from(this._factoriesMap.keys()).sort((one, two) =>
-            one.name.localeCompare(two.name)
-        );
+        return Array.from(this._factoriesMap.keys()).sort((one, two) => one.name.localeCompare(two.name));
     }
 
     public getFactoryCount(factory: ParsedBuilding) {
@@ -87,18 +85,14 @@ export class TotalsDisplayComponent {
             return;
         }
 
-        Array.from(this.totals?.keys()).forEach(factory => {
+        Array.from(this.totals?.keys()).forEach((factory) => {
             const factoryRates = this.totals?.get(factory) ?? {};
             const factoryOutputMaterials = Object.keys(factoryRates) as Material[];
             const factoryCount = factoryOutputMaterials.reduce(
                 (count, outputMaterial) =>
                     Math.max(
                         count,
-                        getRequiredFactoryCount(
-                            factory,
-                            outputMaterial,
-                            factoryRates[outputMaterial] ?? 0
-                        )
+                        getRequiredFactoryCount(factory, outputMaterial, factoryRates[outputMaterial] ?? 0)
                     ),
                 0
             );
@@ -117,15 +111,12 @@ export class TotalsDisplayComponent {
         this._totalPower = 0;
         this._totalWorkers = 0;
 
-        this._buildCosts = Array.from(this._factoriesMap.entries()).reduce<BuildCosts>(
-            (costs, [factory, count]) => {
-                this._totalPower += factory.power * count;
-                this._totalWorkers += factory.workers * count;
+        this._buildCosts = Array.from(this._factoriesMap.entries()).reduce<BuildCosts>((costs, [factory, count]) => {
+            this._totalPower += factory.power * count;
+            this._totalWorkers += factory.workers * count;
 
-                return addBuildCosts(costs, factory, count);
-            },
-            {}
-        );
+            return addBuildCosts(costs, factory, count);
+        }, {});
     }
 }
 
@@ -141,11 +132,7 @@ function addBuildCosts(costs: BuildCosts, factory: ParsedBuilding, count: number
     return { ...costs, ...factoryCosts };
 }
 
-function getRequiredFactoryCount(
-    factory: ParsedBuilding,
-    material: Material,
-    requiredRate: number
-) {
+function getRequiredFactoryCount(factory: ParsedBuilding, material: Material, requiredRate: number) {
     const productionRate = getRate(material, factory.output[material] ?? 0, factory.duration, 1);
 
     return Math.ceil(requiredRate / productionRate);

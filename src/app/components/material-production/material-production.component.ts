@@ -77,7 +77,7 @@ export class MaterialProductionComponent {
             // case 'Population':
             //     return ' residents';
             default:
-                return "/min";
+                return '/min';
         }
     }
 

@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
-import { ParsedBuilding } from "../../constants";
+import { ParsedBuilding } from '../../constants';
 import { EfficiencyHelper } from '../../helpers';
 import { MaterialProductionModel } from '../material-production/material-production.model';
 
 @Component({
-    selector: "efficiency-selector",
-    templateUrl: "./efficiency-selector.component.html",
-    styleUrls: ["./efficiency-selector.component.scss"],
+    selector: 'efficiency-selector',
+    templateUrl: './efficiency-selector.component.html',
+    styleUrls: ['./efficiency-selector.component.scss'],
 })
 export class EfficiencySelectorComponent {
     constructor(public readonly helper: EfficiencyHelper) {}
@@ -20,17 +20,14 @@ export class EfficiencySelectorComponent {
             return [];
         }
 
-        return [
-            ...Array.from(this.productionModel?.getTotals().keys()),
-            this.productionModel.selectedFactory,
-        ].sort((a, b) => a.name.localeCompare(b.name));
+        return [...Array.from(this.productionModel?.getTotals().keys()), this.productionModel.selectedFactory].sort(
+            (a, b) => a.name.localeCompare(b.name)
+        );
     }
 
     public get filteredFactories(): ParsedBuilding[] {
         return this.factories.filter(
-            item =>
-                this._filterText == null ||
-                item.name.toLowerCase().indexOf(this._filterText.toLowerCase()) >= 0
+            (item) => this._filterText == null || item.name.toLowerCase().indexOf(this._filterText.toLowerCase()) >= 0
         );
     }
 

@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
-import { factoryLookup, Material, ParsedBuilding } from "../../constants";
+import { factoryLookup, Material, ParsedBuilding } from '../../constants';
 import { MaterialProductionModel } from '../material-production/material-production.model';
 
 @Component({
-    selector: "bulk-factory-selector",
-    templateUrl: "./bulk-factory-selector.component.html",
+    selector: 'bulk-factory-selector',
+    templateUrl: './bulk-factory-selector.component.html',
 })
 export class BulkFactorySelectorComponent {
     @Input()
@@ -22,12 +22,9 @@ export class BulkFactorySelectorComponent {
         ];
 
         return factories
-            .map(factory => factory.input)
-            .reduce(
-                (materials, input) => addInputMaterials(materials, input),
-                new Array<Material>()
-            )
-            .filter(material => factoryLookup[material].length > 1);
+            .map((factory) => factory.input)
+            .reduce((materials, input) => addInputMaterials(materials, input), new Array<Material>())
+            .filter((material) => factoryLookup[material].length > 1);
     }
 
     public getFactories(material: Material): ParsedBuilding[] {
