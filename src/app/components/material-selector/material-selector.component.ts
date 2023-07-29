@@ -1,15 +1,14 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
-import { Material, Materials } from '../../contracts';
-import { mapMaterialToIcon } from '../../helpers';
+import { Material, materials } from "../../constants";
 
 @Component({
-    selector: 'material-selector',
-    templateUrl: './material-selector.component.html',
-    styleUrls: ['./material-selector.component.scss'],
+    selector: "material-selector",
+    templateUrl: "./material-selector.component.html",
+    styleUrls: ["./material-selector.component.scss"],
 })
 export class MaterialSelectorComponent {
-    private _materials = Array.from(Materials).sort();
+    private _materials = Array.from(materials).sort();
 
     public get materials(): ReadonlyArray<Material> {
         return this._materials;
@@ -17,12 +16,14 @@ export class MaterialSelectorComponent {
 
     public get filteredMaterials(): ReadonlyArray<Material> {
         return this._materials.filter(
-            (item) => this._filterText == null || item.toLowerCase().indexOf(this._filterText.toLowerCase()) >= 0
+            item =>
+                this._filterText == null ||
+                item.toLowerCase().indexOf(this._filterText.toLowerCase()) >= 0
         );
     }
 
     public get buttonText(): string {
-        return this._selectedMaterial != null ? this._selectedMaterial : 'Select Material...';
+        return this._selectedMaterial != null ? this._selectedMaterial : "Select Material...";
     }
 
     private _filterText: string | undefined;

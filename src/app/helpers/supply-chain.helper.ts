@@ -1,8 +1,9 @@
-import { factoryLookup } from '../constants';
-import { IFactory, Material } from '../contracts';
+import { factoryLookup, Material, ParsedBuilding } from "../constants";
 
-export function getFactories<T extends Material>(material: Material): [IFactory<T>, ...IFactory<T>[]] {
-    return factoryLookup[material] as [IFactory<T>, ...IFactory<T>[]];
+export function getFactories<T extends Material>(
+    material: T
+): [ParsedBuilding, ...ParsedBuilding[]] {
+    return factoryLookup[material] as [ParsedBuilding, ...ParsedBuilding[]];
 }
 
 export function getRate(
@@ -15,10 +16,6 @@ export function getRate(
     let factoryRate: number;
 
     switch (material) {
-        case 'Power':
-        case 'Population':
-            factoryRate = materialCost;
-            break;
         default:
             factoryRate = (60 / duration) * materialCost * (efficiency / 100);
     }

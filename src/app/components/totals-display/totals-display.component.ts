@@ -1,17 +1,17 @@
 import { Component, Input } from '@angular/core';
 
-import { FactoryTotals, IFactory, Material } from '../../contracts';
-import { getRate } from '../../helpers';
+import { FactoryTotals, Material, ParsedBuilding } from "../../constants";
+import { getRate } from "../../helpers";
 
 type BuildCosts = Partial<Record<Material, number>>;
 
 @Component({
-    selector: 'totals-display',
-    templateUrl: './totals-display.component.html',
-    styleUrls: ['./totals-display.component.scss'],
+    selector: "totals-display",
+    templateUrl: "./totals-display.component.html",
+    styleUrls: ["./totals-display.component.scss"],
 })
 export class TotalsDisplayComponent {
-    private _factoriesMap: Map<IFactory, number> = new Map();
+    private _factoriesMap: Map<ParsedBuilding, number> = new Map();
     private _buildCosts: BuildCosts = {};
     private _totalWorkers = 0;
     private _totalPower = 0;
@@ -30,7 +30,7 @@ export class TotalsDisplayComponent {
     }
 
     @Input()
-    public factory: IFactory | undefined;
+    public factory: ParsedBuilding | undefined;
 
     private _totals: FactoryTotals | undefined;
 
@@ -45,11 +45,13 @@ export class TotalsDisplayComponent {
         this.generateFactories();
     }
 
-    public get factories(): IFactory[] {
-        return Array.from(this._factoriesMap.keys()).sort((one, two) => one.name.localeCompare(two.name));
+    public get factories(): ParsedBuilding[] {
+        return Array.from(this._factoriesMap.keys()).sort((one, two) =>
+            one.name.localeCompare(two.name)
+        );
     }
 
-    public getFactoryCount(factory: IFactory) {
+    public getFactoryCount(factory: ParsedBuilding) {
         return this._factoriesMap.get(factory);
     }
 
@@ -85,14 +87,18 @@ export class TotalsDisplayComponent {
             return;
         }
 
-        Array.from(this.totals?.keys()).forEach((factory) => {
+        Array.from(this.totals?.keys()).forEach(factory => {
             const factoryRates = this.totals?.get(factory) ?? {};
             const factoryOutputMaterials = Object.keys(factoryRates) as Material[];
             const factoryCount = factoryOutputMaterials.reduce(
                 (count, outputMaterial) =>
                     Math.max(
                         count,
-                        getRequiredFactoryCount(factory, outputMaterial, factoryRates[outputMaterial] ?? 0)
+                        getRequiredFactoryCount(
+                            factory,
+                            outputMaterial,
+                            factoryRates[outputMaterial] ?? 0
+                        )
                     ),
                 0
             );
@@ -111,16 +117,19 @@ export class TotalsDisplayComponent {
         this._totalPower = 0;
         this._totalWorkers = 0;
 
-        this._buildCosts = Array.from(this._factoriesMap.entries()).reduce<BuildCosts>((costs, [factory, count]) => {
-            this._totalPower += factory.input?.Power ?? 0 * count;
-            this._totalWorkers += factory.workers * count;
+        this._buildCosts = Array.from(this._factoriesMap.entries()).reduce<BuildCosts>(
+            (costs, [factory, count]) => {
+                this._totalPower += factory.power * count;
+                this._totalWorkers += factory.workers * count;
 
-            return addBuildCosts(costs, factory, count);
-        }, {});
+                return addBuildCosts(costs, factory, count);
+            },
+            {}
+        );
     }
 }
 
-function addBuildCosts(costs: BuildCosts, factory: IFactory, count: number): BuildCosts {
+function addBuildCosts(costs: BuildCosts, factory: ParsedBuilding, count: number): BuildCosts {
     const factoryCosts = Object.entries(factory.buildCost).reduce<BuildCosts>(
         (factoryCosts, [material, materialCount]) => ({
             ...factoryCosts,
@@ -132,7 +141,11 @@ function addBuildCosts(costs: BuildCosts, factory: IFactory, count: number): Bui
     return { ...costs, ...factoryCosts };
 }
 
-function getRequiredFactoryCount(factory: IFactory, material: Material, requiredRate: number) {
+function getRequiredFactoryCount(
+    factory: ParsedBuilding,
+    material: Material,
+    requiredRate: number
+) {
     const productionRate = getRate(material, factory.output[material] ?? 0, factory.duration, 1);
 
     return Math.ceil(requiredRate / productionRate);

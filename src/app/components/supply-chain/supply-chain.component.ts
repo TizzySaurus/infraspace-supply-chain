@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Material } from '../../contracts';
+import { Material } from "../../constants";
 import {
     MaterialProductionModel,
     MaterialProductionModelFactory,

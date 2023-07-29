@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 
-import { factoryLookup } from '../../constants';
-import { IFactory, Material } from '../../contracts';
+import { factoryLookup, Material, ParsedBuilding } from "../../constants";
 import { MaterialProductionModel } from '../material-production/material-production.model';
 
 @Component({
-    selector: 'bulk-factory-selector',
-    templateUrl: './bulk-factory-selector.component.html',
+    selector: "bulk-factory-selector",
+    templateUrl: "./bulk-factory-selector.component.html",
 })
 export class BulkFactorySelectorComponent {
     @Input()
@@ -23,16 +22,19 @@ export class BulkFactorySelectorComponent {
         ];
 
         return factories
-            .map((factory) => factory.input)
-            .reduce((materials, input) => addInputMaterials(materials, input), new Array<Material>())
-            .filter((material) => factoryLookup[material].length > 1);
+            .map(factory => factory.input)
+            .reduce(
+                (materials, input) => addInputMaterials(materials, input),
+                new Array<Material>()
+            )
+            .filter(material => factoryLookup[material].length > 1);
     }
 
-    public getFactories(material: Material): IFactory[] {
-        return factoryLookup[material] as IFactory[];
+    public getFactories(material: Material): ParsedBuilding[] {
+        return factoryLookup[material] as ParsedBuilding[];
     }
 
-    public selectFactory(factory: IFactory) {
+    public selectFactory(factory: ParsedBuilding) {
         this.productionModel?.hierarchicalFactorySelection(factory);
     }
 }

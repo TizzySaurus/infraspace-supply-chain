@@ -1,8 +1,9 @@
 import { Injectable } from '@morgan-stanley/needle';
 import { filter } from 'rxjs';
 
-import { FactoryTotals, IFactory, Material } from '../../contracts';
-import { EfficiencyHelper, getFactories, getRate } from '../../helpers';
+import { FactoryTotals, Material, ParsedBuilding } from "../../constants";
+import { EfficiencyHelper, getFactories, getRate } from "../../helpers";
+import { objectKeysOf } from "../../types/utils";
 
 @Injectable()
 export class MaterialProductionModelFactory {
@@ -27,7 +28,7 @@ export class MaterialProductionModel<T extends Material = Material> {
         this.updateProductionRate();
 
         helper.efficiencyUpdates
-            .pipe(filter((factory) => factory === this.selectedFactory))
+            .pipe(filter(factory => factory === this.selectedFactory))
             .subscribe(() => this.updateRequiredFactoryCount());
     }
 
@@ -67,19 +68,19 @@ export class MaterialProductionModel<T extends Material = Material> {
         this.updateProductionRate();
     }
 
-    private _materialFactories: IFactory<T>[] = [];
+    private _materialFactories: ParsedBuilding[] = [];
 
-    public get materialFactories(): IFactory<T>[] {
+    public get materialFactories(): ParsedBuilding[] {
         return this._materialFactories;
     }
 
-    private _selectedFactory: IFactory<T>;
+    private _selectedFactory: ParsedBuilding;
 
-    public get selectedFactory(): IFactory<T> {
+    public get selectedFactory(): ParsedBuilding {
         return this._selectedFactory;
     }
 
-    public set selectedFactory(value: IFactory<T>) {
+    public set selectedFactory(value: ParsedBuilding) {
         this._selectedFactory = value;
 
         this.updateChildren();
@@ -91,12 +92,12 @@ export class MaterialProductionModel<T extends Material = Material> {
         return efficiency === 100 ? `` : `(efficiency ${efficiency}%) `;
     }
 
-    public hierarchicalFactorySelection(factory: IFactory) {
+    public hierarchicalFactorySelection(factory: ParsedBuilding) {
         if (this.materialFactories.includes(factory)) {
             this.selectedFactory = factory;
         }
 
-        this._children.forEach((child) => child.hierarchicalFactorySelection(factory));
+        this._children.forEach(child => child.hierarchicalFactorySelection(factory));
     }
 
     private _children: MaterialProductionModel[] = [];
@@ -116,10 +117,15 @@ export class MaterialProductionModel<T extends Material = Material> {
     }
 
     public getTotals(): FactoryTotals {
-        const totals = new Map<IFactory, Partial<Record<Material, number>>>();
+        const totals = new Map<ParsedBuilding, Partial<Record<Material, number>>>();
 
-        this.children.forEach((child) => {
-            this.addTotal(totals, child.selectedFactory, child.material, this.getRequiredComponentRate(child.material));
+        this.children.forEach(child => {
+            this.addTotal(
+                totals,
+                child.selectedFactory,
+                child.material,
+                this.getRequiredComponentRate(child.material)
+            );
 
             this.addChildTotals(totals, child);
         });
@@ -130,18 +136,28 @@ export class MaterialProductionModel<T extends Material = Material> {
     private addChildTotals(totals: FactoryTotals, child: MaterialProductionModel) {
         const childTotals = child.getTotals();
 
-        Array.from(childTotals.keys()).forEach((childFactory) => {
+        Array.from(childTotals.keys()).forEach(childFactory => {
             const childFactoryTotals = childTotals.get(childFactory) ?? {};
 
             const childTotalMaterials = Object.keys(childFactoryTotals) as Material[];
 
-            childTotalMaterials.forEach((childMaterial) =>
-                this.addTotal(totals, childFactory, childMaterial, childFactoryTotals[childMaterial] ?? 0)
+            childTotalMaterials.forEach(childMaterial =>
+                this.addTotal(
+                    totals,
+                    childFactory,
+                    childMaterial,
+                    childFactoryTotals[childMaterial] ?? 0
+                )
             );
         });
     }
 
-    private addTotal(totals: FactoryTotals, factory: IFactory, material: Material, rate: number) {
+    private addTotal(
+        totals: FactoryTotals,
+        factory: ParsedBuilding,
+        material: Material,
+        rate: number
+    ) {
         let factoryTotals = totals.get(factory);
 
         if (factoryTotals == null) {
@@ -157,7 +173,9 @@ export class MaterialProductionModel<T extends Material = Material> {
     private updateProductionRate() {
         this._productionRate = this.calculateRate(this._factoryCount);
 
-        this.children.forEach((child) => (child.requiredRate = this.getRequiredComponentRate(child.material)));
+        this.children.forEach(
+            child => (child.requiredRate = this.getRequiredComponentRate(child.material))
+        );
     }
 
     private updateRequiredFactoryCount() {
@@ -183,8 +201,8 @@ export class MaterialProductionModel<T extends Material = Material> {
     private updateChildren() {
         const input = this._selectedFactory.input ?? {};
 
-        this._children = Object.keys(input)
-            .filter((material) => material != 'Power')
-            .map((component) => this.childFactory.create(component as Material, this.depth + 1));
+        this._children = objectKeysOf(input)
+            // .filter(material => material != "power")
+            .map(component => this.childFactory.create(component, this.depth + 1));
     }
 }

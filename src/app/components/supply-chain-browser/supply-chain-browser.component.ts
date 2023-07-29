@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Material } from '../../contracts';
+import { Material } from "../../constants";
 
 @Component({
     selector: 'supply-chain-browser',

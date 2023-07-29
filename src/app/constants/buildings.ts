@@ -1,53 +1,35 @@
-import buildings from "../../assets/config/buildings.json" assert { type: "json" };
-import constructionCategories from "../../assets/config/constructionCategories.json" assert { type: "json" };
+import { buildings } from "../../assets/config/buildings";
+import { DeepWriteable, entriesOf, hasKey, objectKeysOf, unionToTuple } from "../types/utils";
+import { parsedCategories, ParsedCategory } from "./categories";
 
-const hasKey = <o, k extends string>(o: o, k: k): o is Extract<o, { [_ in k]: {} }> => {
-    const valueAtKey = (o as any)?.[k];
-    return valueAtKey !== undefined && valueAtKey !== null;
+export type Material = Extract<
+    Extract<Building, { productionLogic: any }>["productionLogic"],
+    { productionDefinition: any }
+>["productionDefinition"]["producables"][number]["resourceName"];
+
+type Buildings = typeof buildings;
+type BuildingName = keyof Buildings;
+type Building = Buildings[keyof Buildings];
+
+type MaterialsOf<building extends Building> = building extends {
+    productionLogic: {
+        productionDefinition: {
+            producables: readonly { resourceName: infer resourceName }[];
+        };
+    };
+}
+    ? string extends resourceName
+        ? never
+        : resourceName
+    : never;
+
+type MaterialsToProducerNames = {
+    [K in keyof Buildings as MaterialsOf<Buildings[K]>]: unionToTuple<K>;
 };
 
-type evaluate<t> = { [k in keyof t]: t[k] } & unknown;
-export type List<t = unknown> = readonly t[];
-export type entryOf<o> = evaluate<
-    { [k in keyof o]-?: [k, Exclude<o[k], undefined>] }[o extends List ? keyof o & number : keyof o]
->;
-export type entriesOf<o extends object> = entryOf<o>[];
-export const entriesOf = <o extends object>(o: o) => Object.entries(o) as entriesOf<o>;
+type ParsedBuildingItemQuantity = Partial<Record<Material, number>>;
 
-type Category = {
-    categoryName: string;
-    buttonsType: string;
-    children: (Category | { itemName: string })[];
-};
-
-type ParsedCategoryValue = string | Record<Category["categoryName"], string[]>;
-type ParsedCategory = Record<Category["categoryName"], ParsedCategoryValue[]>;
-
-const parsedConstructionCategories: ParsedCategory = {};
-function recurseConstructionCategory(category: Category) {
-    const categoryItems: ParsedCategoryValue[] = [];
-    for (const child of category.children) {
-        if (hasKey(child, "categoryName")) {
-            // Is a sub-category
-            categoryItems.push({
-                [child.categoryName]: recurseConstructionCategory(child) as string[],
-            });
-        } else {
-            categoryItems.push(child.itemName);
-        }
-    }
-    return categoryItems;
-}
-
-for (const rootCategory of constructionCategories["categories"]) {
-    parsedConstructionCategories[rootCategory.categoryName] =
-        recurseConstructionCategory(rootCategory);
-}
-
-type Building = typeof buildings[BuildingName];
-
-type ParsedBuildingItemQuantity = Record<string, number>;
-type ParsedBuilding = {
+export type ParsedBuilding = {
     name: string;
     buildCost: ParsedBuildingItemQuantity;
     categoryPath: string[] | null;
@@ -56,11 +38,6 @@ type ParsedBuilding = {
     output: ParsedBuildingItemQuantity;
     power: number;
     workers: number;
-};
-
-type BuildingName = keyof typeof buildings;
-type Buildings = {
-    [buildingName in BuildingName]: Building;
 };
 
 function getCategoryPath(categories: ParsedCategory, target: string): string[] | null {
@@ -72,7 +49,6 @@ function getCategoryPath(categories: ParsedCategory, target: string): string[] |
                 }
                 continue;
             }
-
             let path = getCategoryPath(child, target);
             if (path !== null) {
                 return [categoryName, ...path];
@@ -87,7 +63,7 @@ function rawCostsToParsedCosts(rawBuilding: Building): ParsedBuilding["buildCost
 
     const parsedCostsForBuilding: ParsedBuilding["buildCost"] = {};
     for (const cost of rawBuilding.costs) {
-        parsedCostsForBuilding[cost["resourceName"]] = cost["amount"];
+        parsedCostsForBuilding[cost.resourceName] = cost.amount;
     }
     return parsedCostsForBuilding;
 }
@@ -152,12 +128,26 @@ function getProducablesOfRawBuilding(rawBuilding: Building) {
     return rawBuilding.productionLogic.productionDefinition.producables;
 }
 
-function getOutputFromRawBuilding(rawBuilding: Building) {
+function getOutputFromRawBuilding(
+    rawBuilding: Building,
+    buildingName: BuildingName,
+    tmpMaterialsToProducers: Partial<DeepWriteable<MaterialsToProducerNames>>
+) {
     const outputs: ParsedBuilding["output"] = {};
 
     const producables = getProducablesOfRawBuilding(rawBuilding);
     for (const producable of producables) {
         outputs[producable.resourceName] = producable.amount;
+        if (tmpMaterialsToProducers[producable.resourceName] === undefined)
+            (tmpMaterialsToProducers[producable.resourceName] as BuildingName[]) = [
+                buildingName as never,
+            ];
+        else
+            (
+                tmpMaterialsToProducers[
+                    producable.resourceName
+                ] as MaterialsToProducerNames[Material]
+            ).push(buildingName as never);
     }
     return outputs;
 }
@@ -171,19 +161,28 @@ function getDurationFromRawBuilding(rawBuilding: Building) {
     return rawBuilding.productionLogic.productionDefinition.timeSteps / 5000;
 }
 
-function parseRawBuilding(buildingName: BuildingName, rawBuilding: Building) {
-    const categoryPath = getCategoryPath(parsedConstructionCategories, buildingName);
+function parseRawBuilding(
+    buildingName: BuildingName,
+    rawBuilding: Building,
+    tmpMaterialsToProducers: Partial<MaterialsToProducerNames>
+) {
+    const categoryPath = getCategoryPath(parsedCategories, buildingName);
     const duration = getDurationFromRawBuilding(rawBuilding);
     const maxWorkers = getMaxWorkersFromRawBuilding(rawBuilding);
     const parsedCosts = rawCostsToParsedCosts(rawBuilding);
     const parsedInput = getInputFromRawBuilding(rawBuilding);
-    const parsedOutput = getOutputFromRawBuilding(rawBuilding);
+    const parsedOutput = getOutputFromRawBuilding(
+        rawBuilding,
+        buildingName,
+        tmpMaterialsToProducers
+    );
     const power = getPowerFromRawBuilding(rawBuilding);
     return { categoryPath, duration, maxWorkers, parsedCosts, parsedInput, parsedOutput, power };
 }
 
-function parseBuilding(buildings: Buildings) {
+function parseBuildings(buildings: Buildings) {
     const parsedBuildings: Record<string, ParsedBuilding> = {};
+    const tmpMaterialsToProducers: Partial<MaterialsToProducerNames> = {};
 
     for (const [buildingName, rawBuilding] of entriesOf(buildings)) {
         const {
@@ -194,7 +193,7 @@ function parseBuilding(buildings: Buildings) {
             parsedInput: input,
             parsedOutput: output,
             power,
-        } = parseRawBuilding(buildingName, rawBuilding);
+        } = parseRawBuilding(buildingName, rawBuilding, tmpMaterialsToProducers);
 
         parsedBuildings[buildingName] = {
             name: buildingName,
@@ -207,8 +206,13 @@ function parseBuilding(buildings: Buildings) {
             workers,
         };
     }
-    return parsedBuildings;
+    return {
+        materialsToProducers: tmpMaterialsToProducers as MaterialsToProducerNames,
+        parsedBuildings,
+    };
 }
 
-const parsedBuildings: Record<string, ParsedBuilding> = parseBuilding(buildings);
-console.log(parsedBuildings);
+export const { materialsToProducers, parsedBuildings } = parseBuildings(buildings);
+
+export type Materials = keyof MaterialsToProducerNames;
+export const materials = objectKeysOf(materialsToProducers) as Materials[];

@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
-import { IFactory } from '../../contracts';
+import { ParsedBuilding } from "../../constants";
 import { EfficiencyHelper } from '../../helpers';
 import { MaterialProductionModel } from '../material-production/material-production.model';
 
 @Component({
-    selector: 'efficiency-selector',
-    templateUrl: './efficiency-selector.component.html',
-    styleUrls: ['./efficiency-selector.component.scss'],
+    selector: "efficiency-selector",
+    templateUrl: "./efficiency-selector.component.html",
+    styleUrls: ["./efficiency-selector.component.scss"],
 })
 export class EfficiencySelectorComponent {
     constructor(public readonly helper: EfficiencyHelper) {}
@@ -15,19 +15,22 @@ export class EfficiencySelectorComponent {
     @Input()
     public productionModel: MaterialProductionModel | undefined;
 
-    public get factories(): IFactory<any>[] {
+    public get factories(): ParsedBuilding[] {
         if (this.productionModel == null) {
             return [];
         }
 
-        return [...Array.from(this.productionModel?.getTotals().keys()), this.productionModel.selectedFactory].sort(
-            (a, b) => a.name.localeCompare(b.name)
-        );
+        return [
+            ...Array.from(this.productionModel?.getTotals().keys()),
+            this.productionModel.selectedFactory,
+        ].sort((a, b) => a.name.localeCompare(b.name));
     }
 
-    public get filteredFactories(): IFactory<any>[] {
+    public get filteredFactories(): ParsedBuilding[] {
         return this.factories.filter(
-            (item) => this._filterText == null || item.name.toLowerCase().indexOf(this._filterText.toLowerCase()) >= 0
+            item =>
+                this._filterText == null ||
+                item.name.toLowerCase().indexOf(this._filterText.toLowerCase()) >= 0
         );
     }
 
@@ -45,7 +48,7 @@ export class EfficiencySelectorComponent {
         this._filterText = undefined;
     }
 
-    public updateEfficiency(value: Event, factory: IFactory): void {
+    public updateEfficiency(value: Event, factory: ParsedBuilding): void {
         const targetValue = parseInt((value.target as HTMLInputElement).value);
         this.helper.updateEfficiency(targetValue, factory);
     }
